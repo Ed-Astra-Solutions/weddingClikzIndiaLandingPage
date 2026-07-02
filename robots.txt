@@ -1,19 +1,36 @@
-# Heston Photo robots.txt
-# https://hestonphoto.co.uk
+# WeddingClickz robots.txt
+# https://weddingclickz.com
 
 User-agent: *
 Allow: /
-
-# Block API endpoints (served via subdomain, but disallow just in case)
+Allow: /blog.html
+Allow: /blog/
+Allow: /sitemap.xml
 Disallow: /api/
+Disallow: /admin/
 
-# Private client galleries (also noindex'd at the page level)
-Disallow: /event.html
+# ── AI crawlers: allow for GEO (Generative Engine Optimisation) ──
+User-agent: GPTBot
+Allow: /
 
-# Polite crawl rate for Bing
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# ── Primary search engines ──
+User-agent: Googlebot
+Allow: /
+
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
 
-# Sitemap location
-Sitemap: https://hestonphoto.co.uk/sitemap.xml
+# Sitemap
+Sitemap: https://weddingclickz.com/sitemap.xml

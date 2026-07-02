@@ -1,0 +1,232 @@
+/* WeddingClickz – Static blog post styles (shared) */
+:root {
+    --gold: #C9A962;
+    --gold-light: #D4B978;
+    --charcoal: #2C2C2C;
+    --deep-black: #1A1A1A;
+    --soft-black: #242424;
+    --white: #FAFAFA;
+    --off-white: #F5F0EB;
+    --text-muted: #8A8A8A;
+    --text-light: #B8B8B8;
+    --border-subtle: rgba(201, 169, 98, 0.15);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--deep-black);
+    color: var(--white);
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+}
+a { color: var(--gold); text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { max-width: 100%; display: block; }
+
+h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    color: var(--white);
+    line-height: 1.25;
+}
+
+/* Header */
+header.site-header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: rgba(26, 26, 26, 0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-subtle);
+}
+.header-container {
+    max-width: 1200px; margin: 0 auto; padding: 0 2rem;
+    display: flex; align-items: center; justify-content: space-between; height: 70px;
+}
+.logo-img { height: 40px; width: auto; }
+nav ul { list-style: none; display: flex; gap: 2rem; align-items: center; }
+nav a { color: var(--text-light); font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; }
+nav a:hover { color: var(--gold); text-decoration: none; }
+nav a.active { color: var(--gold); }
+.nav-cta {
+    border: 1px solid var(--gold); padding: 8px 18px; border-radius: 2px;
+    color: var(--gold) !important;
+}
+.nav-cta:hover { background: var(--gold); color: var(--deep-black) !important; }
+
+/* Hero / cover */
+.post-hero {
+    padding: 130px 2rem 40px; max-width: 900px; margin: 0 auto;
+}
+.breadcrumbs {
+    font-size: 0.75rem; letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--text-muted); margin-bottom: 1.5rem;
+}
+.breadcrumbs a { color: var(--text-muted); }
+.breadcrumbs a:hover { color: var(--gold); }
+.breadcrumbs span { color: var(--gold); }
+.post-category {
+    display: inline-block; font-size: 0.7rem; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--gold);
+    border: 1px solid var(--gold); padding: 4px 12px; border-radius: 2px;
+    margin-bottom: 1rem;
+}
+.post-title {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    color: var(--white); margin-bottom: 1rem;
+}
+.post-title em { color: var(--gold); font-style: italic; }
+.post-meta {
+    color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.5rem;
+    display: flex; gap: 12px; flex-wrap: wrap; align-items: center;
+}
+.post-meta .dot { color: var(--gold); }
+.post-cover {
+    max-width: 1100px; margin: 0 auto 2rem;
+    padding: 0 2rem;
+}
+.post-cover img {
+    width: 100%; height: auto; max-height: 520px; object-fit: cover;
+    border-radius: 8px; border: 1px solid var(--border-subtle);
+}
+
+/* Content */
+article.post-content {
+    max-width: 760px; margin: 0 auto; padding: 0 2rem 4rem;
+    color: var(--text-light); font-size: 1.02rem;
+}
+article.post-content p { margin: 0 0 1.4rem; }
+article.post-content h2 {
+    font-size: 1.85rem; color: var(--white); margin: 2.5rem 0 1rem;
+    padding-top: 0.5rem; border-top: 1px solid var(--border-subtle);
+}
+article.post-content h2:first-child { border-top: none; padding-top: 0; }
+article.post-content h3 {
+    font-size: 1.35rem; color: var(--gold-light); margin: 1.75rem 0 0.75rem;
+}
+article.post-content ul, article.post-content ol {
+    padding-left: 1.4rem; margin: 0 0 1.4rem;
+}
+article.post-content li { margin-bottom: 0.6rem; }
+article.post-content blockquote {
+    border-left: 3px solid var(--gold);
+    padding: 1rem 1.5rem; margin: 1.75rem 0;
+    background: rgba(201, 169, 98, 0.05);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-size: 1.2rem; color: var(--white);
+}
+article.post-content strong { color: var(--white); font-weight: 600; }
+article.post-content a { text-decoration: underline; }
+article.post-content table {
+    width: 100%; border-collapse: collapse; margin: 1.5rem 0;
+    font-size: 0.92rem;
+}
+article.post-content th, article.post-content td {
+    border: 1px solid var(--border-subtle); padding: 10px 14px; text-align: left;
+}
+article.post-content th { background: rgba(201, 169, 98, 0.08); color: var(--white); }
+.faq-block {
+    margin-top: 2rem; padding-top: 1.5rem;
+    border-top: 1px solid var(--border-subtle);
+}
+.faq-block details {
+    border: 1px solid var(--border-subtle);
+    border-radius: 4px; padding: 14px 18px; margin-bottom: 12px;
+    background: rgba(255,255,255,0.02);
+}
+.faq-block summary {
+    cursor: pointer; font-weight: 600; color: var(--white);
+    font-family: 'Cormorant Garamond', serif; font-size: 1.15rem;
+}
+.faq-block details[open] summary { color: var(--gold); }
+.faq-block details p { margin-top: 10px; }
+
+.post-tags {
+    display: flex; gap: 8px; flex-wrap: wrap;
+    margin: 2rem 0; padding-top: 2rem;
+    border-top: 1px solid var(--border-subtle);
+}
+.post-tags span {
+    font-size: 0.7rem; padding: 5px 12px;
+    border: 1px solid var(--border-subtle); border-radius: 2px;
+    color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;
+}
+
+/* CTA box */
+.cta-box {
+    background: linear-gradient(135deg, rgba(201,169,98,0.08), rgba(201,169,98,0.02));
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px; padding: 1.75rem;
+    margin: 2.5rem 0; text-align: center;
+}
+.cta-box h3 { color: var(--white); margin-bottom: 0.5rem; }
+.cta-box p { color: var(--text-light); margin-bottom: 1rem; }
+.cta-btn {
+    display: inline-block; padding: 12px 28px;
+    border: 1px solid var(--gold); color: var(--gold);
+    text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem;
+    transition: all 0.3s;
+}
+.cta-btn:hover { background: var(--gold); color: var(--deep-black); text-decoration: none; }
+
+/* Related posts */
+.related {
+    max-width: 1100px; margin: 0 auto; padding: 3rem 2rem;
+    border-top: 1px solid var(--border-subtle);
+}
+.related h2 {
+    font-size: 1.6rem; margin-bottom: 1.5rem; color: var(--white);
+}
+.related-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+}
+.related-card {
+    border: 1px solid var(--border-subtle); border-radius: 6px;
+    padding: 1.25rem; transition: all 0.3s;
+    background: rgba(255,255,255,0.015);
+}
+.related-card:hover { border-color: var(--gold); transform: translateY(-3px); }
+.related-card .cat {
+    font-size: 0.65rem; letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 6px; display: block;
+}
+.related-card h3 {
+    font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--white);
+}
+.related-card p { color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; }
+
+/* Footer */
+footer.site-footer {
+    background: var(--charcoal); padding: 2rem 0; text-align: center;
+    border-top: 1px solid var(--border-subtle);
+}
+.footer-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+.footer-copyright { color: var(--text-muted); font-size: 0.8rem; }
+.footer-copyright a { color: var(--gold); }
+
+/* Mobile */
+.mobile-menu-toggle {
+    display: none; flex-direction: column; gap: 5px; cursor: pointer;
+}
+.mobile-menu-toggle span {
+    width: 24px; height: 2px; background: var(--gold); transition: all 0.3s;
+}
+
+@media (max-width: 992px) {
+    .related-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+    .mobile-menu-toggle { display: flex; }
+    nav ul {
+        display: none; position: absolute; top: 70px; left: 0; right: 0;
+        background: rgba(26,26,26,0.98); flex-direction: column;
+        padding: 1rem 2rem 2rem; gap: 1rem;
+        border-bottom: 1px solid var(--border-subtle);
+    }
+    nav ul.open { display: flex; }
+    .post-hero { padding: 110px 1.5rem 30px; }
+    article.post-content { padding: 0 1.5rem 3rem; }
+    .post-cover { padding: 0 1.5rem; }
+    .related { padding: 2.5rem 1.5rem; }
+    .related-grid { grid-template-columns: 1fr; }
+}
