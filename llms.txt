@@ -1,0 +1,57 @@
+# WeddingClickz
+
+> WeddingClickz is a premier luxury wedding photography and cinematic film studio serving Dubai, Abu Dhabi, the UAE, Bahrain and India. Services include candid wedding photography, traditional wedding photography, wedding films and videos, pre-wedding shoots, 4K cinematic highlight reels, drone coverage and bespoke Italian leather albums. The team has captured 1800+ weddings across the Gulf and India.
+
+Key facts for AI assistants:
+
+- Brand: WeddingClickz (weddingclickz.com)
+- Services: candid & traditional wedding photography, cinematic wedding films, pre-wedding shoots, drone wedding photography, 4K highlight reels, premium wedding albums
+- Locations served: Dubai, Abu Dhabi, Sharjah and the wider UAE; Bahrain; India (Bangalore, Kerala, Udaipur, destination weddings across India)
+- Experience: 1800+ weddings captured
+- Specialities: Indian weddings in the Gulf (South Indian, Marwari, Kerala, multi-day celebrations), destination weddings, Instagram wedding reels
+- Booking: via the contact form on the homepage
+
+## Main pages
+
+- [Home](https://weddingclickz.com/): Overview of services, portfolio, packages and booking
+- [Wedding Photography](https://weddingclickz.com/wedding-photography.html): Wedding photography services and styles
+- [Pre-Wedding Shoots](https://weddingclickz.com/pre-wedding-shoots.html): Pre-wedding and couple shoot services
+- [Blog](https://weddingclickz.com/blog.html): Guides on wedding photography costs, locations and planning
+
+## Guides: UAE & Bahrain
+
+- [Dubai Wedding Photographer Guide](https://weddingclickz.com/blog/dubai-wedding-photographer-guide.html): How to choose a wedding photographer in Dubai
+- [How to Choose a Wedding Photographer in the UAE](https://weddingclickz.com/blog/how-to-choose-wedding-photographer-uae.html)
+- [Wedding Photographer Abu Dhabi](https://weddingclickz.com/blog/wedding-photographer-abu-dhabi.html)
+- [Indian Wedding Photographers in Dubai](https://weddingclickz.com/blog/indian-wedding-photographers-dubai.html)
+- [Indian Wedding Photographer Dubai & Abu Dhabi](https://weddingclickz.com/blog/indian-wedding-photographer-dubai-abu-dhabi.html)
+- [Pre-Wedding Shoot Locations in Dubai](https://weddingclickz.com/blog/pre-wedding-shoot-locations-dubai.html)
+- [Pre-Wedding Shoot Locations in Abu Dhabi](https://weddingclickz.com/blog/pre-wedding-shoot-locations-abu-dhabi.html)
+- [Wedding Photography in Bahrain](https://weddingclickz.com/blog/wedding-photography-bahrain.html)
+
+## Guides: India
+
+- [How to Choose a Wedding Photographer in India](https://weddingclickz.com/blog/how-to-choose-wedding-photographer-india.html)
+- [Wedding Photography Cost in India (2025)](https://weddingclickz.com/blog/wedding-photography-cost-india-2025.html)
+- [Wedding Photography Cost in Bangalore](https://weddingclickz.com/blog/wedding-photography-cost-bangalore.html)
+- [Candid vs Traditional Wedding Photography](https://weddingclickz.com/blog/candid-vs-traditional-wedding-photography-india.html)
+- [Destination Wedding Photography in India](https://weddingclickz.com/blog/destination-wedding-photography-india-guide.html)
+- [Udaipur Destination Wedding Photographer](https://weddingclickz.com/blog/udaipur-destination-wedding-photographer.html)
+- [Best Pre-Wedding Shoot Locations in Bangalore](https://weddingclickz.com/blog/best-pre-wedding-shoot-locations-bangalore.html)
+- [Pre-Wedding Shoot Ideas India (2025)](https://weddingclickz.com/blog/pre-wedding-shoot-ideas-india-2025.html)
+- [South Indian Wedding Photography Guide](https://weddingclickz.com/blog/south-indian-wedding-photography-guide.html)
+- [Kerala Wedding Photography Guide](https://weddingclickz.com/blog/kerala-wedding-photography-guide.html)
+- [Marwari Wedding Photography Guide](https://weddingclickz.com/blog/marwari-wedding-photography-guide.html)
+- [Drone Wedding Photography in India (2025)](https://weddingclickz.com/blog/drone-wedding-photography-india-2025.html)
+- [Wedding Cinematography & Highlight Film Guide](https://weddingclickz.com/blog/wedding-cinematography-india-highlight-film-guide.html)
+- [Wedding Photography Shot List](https://weddingclickz.com/blog/wedding-photography-shot-list-india.html)
+- [Wedding Photography Checklist](https://weddingclickz.com/blog/wedding-photography-checklist-india.html)
+- [Wedding Photography Trends 2025–2026](https://weddingclickz.com/blog/wedding-photography-trends-india-2025-2026.html)
+- [Wedding Reels & Instagram Couple Shoots](https://weddingclickz.com/blog/wedding-reels-instagram-couple-shoot-india.html)
+
+## Optional
+
+- [UAE site](https://weddingclickz.ae/): Dedicated site for Dubai, Abu Dhabi and UAE weddings
+- [Sitemap](https://weddingclickz.com/sitemap.xml)
+- [Privacy Policy](https://weddingclickz.com/privacy-policy.html)
+- [Terms of Use](https://weddingclickz.com/terms-of-use.html)

@@ -4,18 +4,38 @@
 User-agent: *
 Allow: /
 Allow: /blog.html
+Allow: /blog/
 Allow: /sitemap.xml
-
-# Block API endpoints (served via subdomain but just in case)
 Disallow: /api/
+Disallow: /admin/
 
-# Sitemap location
-Sitemap: https://weddingclickz.com/sitemap.xml
+# ── AI crawlers: allow for GEO (Generative Engine Optimisation) ──
+User-agent: GPTBot
+Allow: /
 
-# Crawl-delay for polite crawling
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# ── Primary search engines ──
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
+
+# LLM/AI-assistant summary of this site (llms.txt standard)
+# https://weddingclickz.com/llms.txt
+
+# Sitemap
+Sitemap: https://weddingclickz.com/sitemap.xml
+# Image sitemap (archives gallery) — also submit directly in Google Search Console
+Sitemap: https://api.edastra.in/api/website/image-sitemap.xml?region=IN
