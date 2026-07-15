@@ -1066,7 +1066,7 @@
                 const date = blog.publishedAt
                     ? new Date(blog.publishedAt).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })
                     : '';
-                const coverImg = blog.coverImageUrl || 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&h=400&fit=crop';
+                const coverImg = blog.coverImageUrl || 'assets/gallery/wedding-photography-uae-banner.jpg';
                 const tags = (blog.tags || []).slice(0, 3);
 
                 return `
@@ -1124,7 +1124,7 @@
             document.title = `${blog.title} - WeddingClickz Blog`;
 
             // Build post view
-            const coverImg = blog.coverImageUrl || 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&h=600&fit=crop';
+            const coverImg = blog.coverImageUrl || 'assets/gallery/wedding-photography-uae-banner.jpg';
             const date = blog.publishedAt
                 ? new Date(blog.publishedAt).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })
                 : '';
