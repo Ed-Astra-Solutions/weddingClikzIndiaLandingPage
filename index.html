@@ -21,11 +21,19 @@
     
     <!-- Primary SEO Meta Tags -->
     <title>Wedding Photographer in Middle East | WeddingClickz</title>
-    <meta name="description" content="WeddingClickz is a premier luxury wedding photographer & cinematic film studio serving Dubai, Abu Dhabi, UAE, Bahrain & India. Specialising in candid wedding photography, wedding films, wedding videos, pre-wedding shoots in Dubai, Abu Dhabi, UAE & Bahrain, 4K cinematic highlight reels and bespoke Italian leather albums. Trusted wedding photographers and videographers in Dubai and Abu Dhabi. 1800+ weddings captured. Book your dream wedding coverage today.">
+    <meta name="description" content="Luxury wedding photographer and cinematic film studio in Dubai, Abu Dhabi and India. Candid photography, 4K wedding films and pre-wedding shoots.">
     <meta name="keywords" content="wedding photography, wedding photographer, wedding films, wedding cinematography, candid wedding photography, destination wedding photographer, pre-wedding shoot, luxury wedding photography, premium wedding photographer, wedding photographer Bangalore, wedding photographer India, wedding photographer Dubai, wedding photographer Abu Dhabi, wedding photographer UAE, wedding photographer Mumbai, wedding photographer Delhi, wedding photographer Hyderabad, wedding photographer Goa, wedding photographer Udaipur, wedding photographer Jaipur, wedding photographer Kerala, wedding photography Dubai, wedding photography Abu Dhabi, wedding film Dubai, wedding film Abu Dhabi, wedding video Dubai, wedding video Abu Dhabi, wedding UAE, Photographer Dubai, Photographer Abu Dhabi, Videographer Dubai, Videographer Abu Dhabi, Pre wedding shoot Dubai, Pre wedding shoot Abu Dhabi, Pre wedding shoot UAE, Pre wedding shoot Bahrain, Wedding photography Bahrain, Indian wedding photography, Hindu wedding photographer, Muslim wedding photographer, Christian wedding photographer, South Indian wedding photographer, North Indian wedding photographer, best wedding photographer India, top wedding photographer Bangalore, cinematic wedding film, 4K wedding film, drone wedding photography, bridal portrait, couple portrait, engagement photography, reception photography, mehendi photography, sangeet photography, haldi ceremony photography, wedding album, Italian leather wedding album, wedding photo book, wedding videography, wedding video, wedding highlight reel, wedding teaser, celebrity wedding photographer, international wedding photographer, wedding photography packages, affordable wedding photography, professional wedding photographer, creative wedding photographer, artistic wedding photographer, wedding photography portfolio, real wedding gallery, wedding photography near me, best wedding cinematographer India, wedding photographer cost, wedding photography tips, wedding planning">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://weddingclickz.com/">
+
+    <!-- Hreflang: the homepage is the region-neutral entry point; the two
+         landing pages below are the geo-targeted variants Google should
+         route India and UAE searchers to. -->
+    <link rel="alternate" hreflang="en-in" href="https://weddingclickz.com/wedding-photographer-india.html">
+    <link rel="alternate" hreflang="en-ae" href="https://weddingclickz.com/wedding-photographer-uae.html">
+    <link rel="alternate" hreflang="en-bh" href="https://weddingclickz.com/wedding-photographer-uae.html">
+    <link rel="alternate" hreflang="x-default" href="https://weddingclickz.com/">
     
     <!-- Language & Region -->
     <meta name="language" content="English">
@@ -484,13 +492,13 @@
             width: auto;
         }
 
-        .logo h1 {
+        .logo .logo-word {
             font-size: 1.5rem;
             color: var(--white);
             letter-spacing: 0.02em;
         }
 
-        .logo h1 span {
+        .logo .logo-word span {
             color: var(--gold);
         }
 
@@ -666,7 +674,7 @@
             object-fit: contain;
         }
 
-        .hero-logo h1 {
+        .hero-logo .logo-word {
             font-size: var(--hero-title-size);
             color: var(--white);
             letter-spacing: 0.06em;
@@ -676,7 +684,7 @@
             text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
 
-        .hero-logo h1 span {
+        .hero-logo .logo-word span {
             color: var(--gold);
         }
 
@@ -4545,7 +4553,7 @@
                 padding: 0.5rem 0;
             }
 
-            .logo h1 {
+            .logo .logo-word {
                 font-size: 1.1rem;
             }
 
@@ -5833,12 +5841,15 @@
         <div class="header-container">
             <a href="#" class="logo">
                 <img src="logo.png" alt="WeddingClickz" class="logo-img">
-                <h1>Wedding<span>Clickz</span></h1>
+                <span class="logo-word">Wedding<span>Clickz</span></span>
             </a>
             
             <nav id="nav">
                 <ul>
                     <li><a href="#home">Home</a></li>
+                    <li><a href="#archives">Gallery</a></li>
+                    <li><a href="wedding-photographer-india.html">India</a></li>
+                    <li><a href="wedding-photographer-uae.html">UAE</a></li>
                     <li><a href="wedding-photography.html">Weddings</a></li>
                     <li><a href="pre-wedding-shoots.html">Pre-Wedding</a></li>
                     <li><a href="#films">Films</a></li>
@@ -5872,7 +5883,7 @@
 
     <!-- Hero Section -->
     <!-- Hidden SEO H1 for search engines (visible hero uses decorative text) -->
-    <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">WeddingClickz – Wedding Photographer & Cinematic Films in Dubai, Abu Dhabi, UAE, Bahrain, Bangalore & India | Wedding Photography, Wedding Films, Wedding Videos, Pre-Wedding Shoots</h1>
+    <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">WeddingClickz &ndash; Wedding Photography &amp; Cinematic Films in Dubai, Abu Dhabi &amp; India</h1>
     
     <section class="hero" id="home" aria-label="Hero – Premium Wedding Photography">
         <div class="hero-overlay"></div>
@@ -5880,7 +5891,7 @@
         <!-- Hero Logo - Centered at top -->
         <a href="#" class="hero-logo">
             <img src="logo.png" alt="WeddingClickz" class="hero-logo-img">
-            <h1>Wedding<span>Clickz</span></h1>
+            <span class="logo-word">Wedding<span>Clickz</span></span>
             <span class="hero-tagline">Premium Wedding Photography</span>
         </a>
         
@@ -5945,9 +5956,14 @@
     <section class="gallery-section" id="archives" aria-label="Wedding Photography Portfolio Gallery">
         <div class="section-container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-label">Our Work</span>
-                <h2 class="section-title">Featured <em>Archives</em></h2>
-                <p class="section-subtitle">A curated collection of our most treasured moments, capturing the essence of love and celebration.</p>
+                <span class="section-label">Portfolio Gallery</span>
+                <h2 class="section-title">Wedding Photography <em>Gallery</em></h2>
+                <p class="section-subtitle">A curated gallery of real weddings we have photographed across India and the UAE &mdash; click any cover to open the full set.</p>
+                <p class="section-subtitle" style="margin-top:0.75rem;font-size:0.9rem;">
+                    See the region galleries:
+                    <a href="wedding-photographer-india.html" style="color:var(--gold-dark);">India</a> &nbsp;&middot;&nbsp;
+                    <a href="wedding-photographer-uae.html" style="color:var(--gold-dark);">UAE</a>
+                </p>
             </div>
 
             <div class="gallery-grid" id="archivesGrid">
@@ -6536,7 +6552,9 @@
                 <div class="footer-links">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#archives">Portfolio</a></li>
+                        <li><a href="#archives">Portfolio Gallery</a></li>
+                        <li><a href="wedding-photographer-india.html">Wedding Photographer India</a></li>
+                        <li><a href="wedding-photographer-uae.html">Wedding Photographer UAE</a></li>
                         <li><a href="#films">Wedding Films</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#about">About Us</a></li>

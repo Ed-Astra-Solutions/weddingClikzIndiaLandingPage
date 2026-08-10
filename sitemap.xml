@@ -1,16 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <!-- Homepage -->
   <url>
     <loc>https://weddingclickz.com/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://weddingclickz.com/wedding-photographer-india.html"/>
+    <xhtml:link rel="alternate" hreflang="en-ae" href="https://weddingclickz.com/wedding-photographer-uae.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://weddingclickz.com/"/>
     <image:image>
       <image:loc>https://weddingclickz.com/og-image.jpg</image:loc>
       <image:title>WeddingClickz — Wedding Photographer &amp; Cinematic Films in Dubai, Abu Dhabi, UAE, Bahrain &amp; India</image:title>
+    </image:image>
+  </url>
+
+  <!-- ─────── GEO LANDING PAGES (India / UAE) ─────── -->
+  <url>
+    <loc>https://weddingclickz.com/wedding-photographer-india.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://weddingclickz.com/wedding-photographer-india.html"/>
+    <xhtml:link rel="alternate" hreflang="en-ae" href="https://weddingclickz.com/wedding-photographer-uae.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://weddingclickz.com/"/>
+    <image:image>
+      <image:loc>https://weddingclickz.com/assets/gallery/wedding-21.jpg</image:loc>
+      <image:title>Wedding Photographer in India — WeddingClickz</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://weddingclickz.com/assets/gallery/wedding-16.jpg</image:loc>
+      <image:title>Indian wedding couple in jasmine garlands — WeddingClickz</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://weddingclickz.com/assets/gallery/wedding-19.jpg</image:loc>
+      <image:title>Indian bride and groom in red lehenga and safa — WeddingClickz</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://weddingclickz.com/assets/gallery/wedding-26.jpg</image:loc>
+      <image:title>South Indian bride in jasmine and traditional jewellery — WeddingClickz</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://weddingclickz.com/wedding-photographer-uae.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en-ae" href="https://weddingclickz.com/wedding-photographer-uae.html"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://weddingclickz.com/wedding-photographer-india.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://weddingclickz.com/"/>
+    <image:image>
+      <image:loc>https://weddingclickz.com/assets/gallery/wedding-photography-dubai-hero.jpg</image:loc>
+      <image:title>Wedding Photographer in Dubai &amp; Abu Dhabi — WeddingClickz</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://weddingclickz.com/assets/gallery/bridal-portrait-wedding-photography-dubai.jpg</image:loc>
+      <image:title>Bridal portrait wedding photography Dubai — WeddingClickz</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://weddingclickz.com/assets/gallery/wedding-portrait-photography-abu-dhabi.jpg</image:loc>
+      <image:title>Wedding portrait photography Abu Dhabi — WeddingClickz</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://weddingclickz.com/assets/gallery/muslim-nikah-wedding-photography-uae.jpg</image:loc>
+      <image:title>Muslim Nikah wedding photography UAE — WeddingClickz</image:title>
     </image:image>
   </url>
 
@@ -264,4 +321,28 @@
     <priority>0.3</priority>
   </url>
 
+  <url>
+    <loc>https://weddingclickz.com/blog/business-bay-light-line.html</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://weddingclickz.com/blog/dubai-golden-hour-33-minutes.html</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://weddingclickz.com/blog/business-bay-rooftop-photography-floors.html</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://weddingclickz.com/blog/business-bay-canal-golden-hour.html</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

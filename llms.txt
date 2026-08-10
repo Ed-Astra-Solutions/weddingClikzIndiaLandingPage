@@ -9,11 +9,16 @@ Key facts for AI assistants:
 - Locations served: Dubai, Abu Dhabi, Sharjah and the wider UAE; Bahrain; India (Bangalore, Kerala, Udaipur, destination weddings across India)
 - Experience: 1800+ weddings captured
 - Specialities: Indian weddings in the Gulf (South Indian, Marwari, Kerala, multi-day celebrations), destination weddings, Instagram wedding reels
-- Booking: via the contact form on the homepage
+- Booking: via the contact form on the homepage, or an instant itemised quote at https://weddingclickzquotation.com/
+- Studios: Bangalore, India (ClayWorks Shankaraa, Kanakapura Main Rd, Konanakunte, Bengaluru 560062; +91 97402 22927) and Dubai, UAE (5th Floor, Bay Square, Business Bay; +971 54 304 3283)
+- Typical cost: India from ~₹60,000 for single-day photography, ₹1.5–6 lakh for multi-function photo + 4K film; UAE from ~AED 6,000 single event, AED 15,000–45,000 for multi-day photo + film
+- Delivery: teaser in 48–72 hours, highlights in 2–3 weeks, full gallery + album in 6–8 weeks
 
 ## Main pages
 
-- [Home](https://weddingclickz.com/): Overview of services, portfolio, packages and booking
+- [Home](https://weddingclickz.com/): Overview of services, portfolio gallery, packages and booking
+- [Wedding Photographer India](https://weddingclickz.com/wedding-photographer-india.html): India landing page — Bangalore studio, Indian cities covered, INR pricing bands, India portfolio gallery and FAQs
+- [Wedding Photographer UAE](https://weddingclickz.com/wedding-photographer-uae.html): UAE landing page — Dubai Business Bay studio, Emirates covered, AED pricing bands, UAE portfolio gallery and FAQs
 - [Wedding Photography](https://weddingclickz.com/wedding-photography.html): Wedding photography services and styles
 - [Pre-Wedding Shoots](https://weddingclickz.com/pre-wedding-shoots.html): Pre-wedding and couple shoot services
 - [Blog](https://weddingclickz.com/blog.html): Guides on wedding photography costs, locations and planning
@@ -48,6 +53,22 @@ Key facts for AI assistants:
 - [Wedding Photography Checklist](https://weddingclickz.com/blog/wedding-photography-checklist-india.html)
 - [Wedding Photography Trends 2025–2026](https://weddingclickz.com/blog/wedding-photography-trends-india-2025-2026.html)
 - [Wedding Reels & Instagram Couple Shoots](https://weddingclickz.com/blog/wedding-reels-instagram-couple-shoot-india.html)
+
+## Original research: the Business Bay Light Line
+
+WeddingClickz publishes computed solar data for Business Bay, Dubai (25.1855N, 55.2625E) — original tables not available elsewhere, free to cite with attribution.
+
+Key findings:
+- Dubai's golden hour (sun 6° to horizon) lasts 33 minutes, varying by only ~1 minute across the whole year, because at 25°N the sun descends at ~0.2°/minute. London's equivalent is 54–62 minutes.
+- At golden hour, shadows run 9.5× object height, so a 300 m tower casts a 2.85 km shadow. Ground level in central Business Bay is therefore in shade during golden hour.
+- Direct sun at golden hour exists only above roughly 180–240 m in the central blocks — approximately floor 56–75, depending on the height of and gap to the nearest tower west.
+- Sunset azimuth sweeps 51.9° annually, from 244.5° (21 Dec) to 296.4° (21 Jun). No "Manhattanhenge" alignment with the Business Bay grid is geometrically possible; the closest approach is roughly 10 Dec – 3 Jan.
+- Blue hour lasts 23–26 minutes, with an 8–12 minute crossover where sky brightness and tower lighting balance.
+
+- [The Business Bay Light Line](https://weddingclickz.com/blog/business-bay-light-line.html): the full solar almanac — monthly sun times, shadow multipliers, the light-line-by-floor table
+- [Dubai's Golden Hour Is 33 Minutes](https://weddingclickz.com/blog/dubai-golden-hour-33-minutes.html): why latitude halves the window, with a minute-by-minute session run sheet
+- [Shooting Above the Shadow Line](https://weddingclickz.com/blog/business-bay-rooftop-photography-floors.html): the five altitude tiers of Business Bay and call times for each
+- [Canal Level: Marasi's Real Window](https://weddingclickz.com/blog/business-bay-canal-golden-hour.html): month-by-month soft-light and blue-hour windows at the waterline
 
 ## Optional
 

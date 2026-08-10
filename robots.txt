@@ -8,6 +8,7 @@ Allow: /blog/
 Allow: /sitemap.xml
 Disallow: /api/
 Disallow: /admin/
+Disallow: /tools/
 
 # ── AI crawlers: allow for GEO (Generative Engine Optimisation) ──
 User-agent: GPTBot
@@ -37,5 +38,6 @@ Allow: /
 
 # Sitemap
 Sitemap: https://weddingclickz.com/sitemap.xml
-# Image sitemap (archives gallery) — also submit directly in Google Search Console
+# Image sitemaps (archives gallery) — also submit directly in Google Search Console
 Sitemap: https://api.edastra.in/api/website/image-sitemap.xml?region=IN
+Sitemap: https://api.edastra.in/api/website/image-sitemap.xml?region=UAE
