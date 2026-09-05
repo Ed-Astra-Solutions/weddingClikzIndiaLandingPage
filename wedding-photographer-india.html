@@ -452,12 +452,6 @@
             .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
         }
         @media (max-width: 768px) {
-            nav ul { display: none; }
-            .mobile-menu-toggle { display: flex; }
-            nav.open ul {
-                display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0;
-                background: var(--charcoal); padding: 1.5rem 2rem; gap: 1.25rem;
-            }
             .steps { grid-template-columns: 1fr; }
         }
     </style>
@@ -521,8 +515,42 @@
         .city-card h3 { font-size: 1.3rem; color: var(--charcoal); margin-bottom: 0.4rem; }
         .city-card p { font-size: 0.85rem; color: var(--text-light); }
 
-        @media (max-width: 768px) { .region-switch { display: none; } }
     </style>
+    <style>
+        /* ------------------------------------------------------------------
+           Header density (QA pass)
+
+           The bar carries the logo lockup, the nav, the region switch and the
+           Get Quote CTA. With the old 768px collapse point everything had to
+           fit into ~740px of usable width at 800px viewport, so the links
+           wrapped and clipped. Two changes fix it: the nav now collapses into
+           the burger at 992px (matching index.html), and 993-1250px drops the
+           wordmark so the remaining links always have room.
+           ------------------------------------------------------------------ */
+
+        /* Hidden on the desktop bar, revealed inside the burger menu below. */
+        .nav-mobile-only { display: none; }
+
+        @media (min-width: 993px) and (max-width: 1250px) {
+            .logo .logo-text { display: none; }
+            nav a { font-size: 0.72rem; letter-spacing: 0.08em; }
+            nav ul { gap: 1.5rem; }
+        }
+
+        @media (max-width: 992px) {
+            nav ul { display: none; }
+            .mobile-menu-toggle { display: flex; }
+            nav.open ul {
+                display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0;
+                background: var(--charcoal); padding: 1.5rem 2rem; gap: 1.25rem;
+            }
+            nav.open .nav-mobile-only { display: list-item; }
+            /* .region-switch collapses with the nav; India/UAE live in the
+               mobile menu as .nav-mobile-only items from here down. */
+            .region-switch { display: none; }
+        }
+    </style>
+
 </head>
 <body>
 
@@ -535,20 +563,25 @@
             </a>
             <nav id="nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="wedding-photographer-india.html" class="active">India</a></li>
-                    <li><a href="wedding-photographer-uae.html">UAE</a></li>
+                    <!-- Home is covered by the logo; India/UAE are covered by the
+                         .region-switch pills next to this nav. Both are demoted to
+                         .nav-mobile-only so the desktop bar stops carrying them
+                         twice, while the mobile menu (where .region-switch is
+                         hidden) still has them. -->
+                    <li class="nav-mobile-only"><a href="index.html">Home</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="wedding-photography.html">Weddings</a></li>
                     <li><a href="pre-wedding-shoots.html">Pre-Wedding</a></li>
                     <li><a href="blog.html">Blog</a></li>
+                    <li class="nav-mobile-only"><a href="wedding-photographer-india.html" class="active">India</a></li>
+                    <li class="nav-mobile-only"><a href="wedding-photographer-uae.html">UAE</a></li>
                 </ul>
             </nav>
             <div class="region-switch" aria-label="Choose your region">
                 <a href="wedding-photographer-india.html" class="current" hreflang="en-IN">🇮🇳 India</a>
                 <a href="wedding-photographer-uae.html" hreflang="en-AE">🇦🇪 UAE</a>
             </div>
-            <a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener" class="nav-cta">Get Quote</a>
+            <a href="index.html#contact" class="nav-cta">Get Quote</a>
             <div class="mobile-menu-toggle" id="menuToggle"><span></span><span></span><span></span></div>
         </div>
     </header>
@@ -561,7 +594,7 @@
             <p>A Bangalore-based photography and cinematic film studio capturing weddings across Bangalore, Mumbai, Delhi, Hyderabad, Chennai, Goa, Udaipur, Jaipur and Kerala — with the artistry of a film and the honesty of a documentary.</p>
             <div class="hero-actions">
                 <a href="#gallery" class="btn btn-gold">See the Gallery</a>
-                <a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener" class="btn btn-outline">Check Availability</a>
+                <a href="index.html#contact" class="btn btn-outline">Check Availability</a>
             </div>
             <div class="trust-bar">
                 <div class="trust-item"><div class="num">1800+</div><div class="lbl">Weddings Captured</div></div>
@@ -628,7 +661,7 @@
                     <p>It is the sehrabandi, the haldi, the mehendi, the sangeet, the muhurtham at an hour nobody wants to wake up for, and a reception that runs past midnight. Our studio at ClayWorks Shankaraa in Konanakunte, Bangalore, is built around that reality: multi-day crews, redundant gear and editors who understand what a family will actually want to look back on.</p>
                     <p>Every wedding is led by a senior photographer and cinematographer, never handed off to juniors. We carry backup cameras, lenses and storage to every function, and shoot to two cards so nothing is ever lost.</p>
                     <p>From the <em>baraat</em> on a Delhi street to the <em>saptapadi</em> in a Bangalore kalyana mantapa, the <em>thaali</em> at a Chennai muhurtham and a palace <em>pheras</em> in Udaipur, we know the rhythm of every tradition and stay one step ahead of the moment.</p>
-                    <a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener" class="btn btn-gold" style="margin-top:1rem;">Get an Instant Quote</a>
+                    <a href="index.html#contact" class="btn btn-gold" style="margin-top:1rem;">Request a Quote</a>
                 </div>
                 <div class="intro-media">
                     <img src="assets/gallery/wedding-16.jpg" alt="Indian wedding couple in traditional jasmine garlands, photographed by WeddingClickz" loading="lazy">
@@ -651,7 +684,7 @@
                 <a class="city-card" href="blog/udaipur-destination-wedding-photographer.html"><h3>Udaipur &amp; Rajasthan</h3><p>Lake palaces, havelis and Jaipur forts — India's most photographed destination-wedding backdrop.</p></a>
                 <a class="city-card" href="blog/kerala-wedding-photography-guide.html"><h3>Kerala</h3><p>Backwater resorts, Syrian Christian church weddings and Nair ceremonies across Kochi, Alleppey and Thrissur.</p></a>
                 <a class="city-card" href="blog/south-indian-wedding-photography-guide.html"><h3>Chennai &amp; Hyderabad</h3><p>Tamil, Telugu and Kannada muhurtham traditions shot by a team that knows every ritual in sequence.</p></a>
-                <a class="city-card" href="https://weddingclickzquotation.com/" target="_blank" rel="noopener"><h3>Mumbai &amp; Delhi NCR</h3><p>Five-star ballrooms, farmhouse sangeets and big-city receptions, with crews sized for 1000+ guest events.</p></a>
+                <a class="city-card" href="index.html#contact"><h3>Mumbai &amp; Delhi NCR</h3><p>Five-star ballrooms, farmhouse sangeets and big-city receptions, with crews sized for 1000+ guest events.</p></a>
                 <a class="city-card" href="blog/destination-wedding-photography-india-guide.html"><h3>Goa &amp; Beyond</h3><p>Beach weddings, Coorg estates and hill-station elopements. Read our destination wedding guide.</p></a>
             </div>
         </div>
@@ -777,9 +810,9 @@
     <!-- CTA -->
     <section class="cta-banner" style="background: linear-gradient(rgba(26,26,26,0.82), rgba(26,26,26,0.88)), url('assets/gallery/wedding-26.jpg') center/cover;">
         <h2>Let's Tell <em>Your</em> Story</h2>
-        <p>Check your date, build your package and get an instant, itemised quote in minutes. No pressure, just clarity.</p>
+        <p>Tell us your dates and what you have in mind — we&rsquo;ll come back with an itemised quote within 24 hours. No pressure, just clarity.</p>
         <div class="hero-actions">
-            <a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener" class="btn btn-gold">Get Your Instant Quote</a>
+            <a href="index.html#contact" class="btn btn-gold">Request Your Quote</a>
             <a href="tel:+919740222927" class="btn btn-outline">Call +91 97402 22927</a>
         </div>
     </section>
@@ -812,7 +845,7 @@
             <div class="footer-links">
                 <h4>Get Started</h4>
                 <ul>
-                    <li><a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener">Get a Quote</a></li>
+                    <li><a href="index.html#contact">Get a Quote</a></li>
                     <li><a href="index.html#contact">Contact Us</a></li>
                     <li><a href="index.html#about">About Us</a></li>
                     <li><a href="privacy-policy.html">Privacy Policy</a></li>

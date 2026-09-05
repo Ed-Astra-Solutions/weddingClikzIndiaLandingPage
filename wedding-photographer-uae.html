@@ -456,12 +456,6 @@
             .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
         }
         @media (max-width: 768px) {
-            nav ul { display: none; }
-            .mobile-menu-toggle { display: flex; }
-            nav.open ul {
-                display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0;
-                background: var(--charcoal); padding: 1.5rem 2rem; gap: 1.25rem;
-            }
             .steps { grid-template-columns: 1fr; }
         }
     </style>
@@ -525,8 +519,42 @@
         .city-card h3 { font-size: 1.3rem; color: var(--charcoal); margin-bottom: 0.4rem; }
         .city-card p { font-size: 0.85rem; color: var(--text-light); }
 
-        @media (max-width: 768px) { .region-switch { display: none; } }
     </style>
+    <style>
+        /* ------------------------------------------------------------------
+           Header density (QA pass)
+
+           The bar carries the logo lockup, the nav, the region switch and the
+           Get Quote CTA. With the old 768px collapse point everything had to
+           fit into ~740px of usable width at 800px viewport, so the links
+           wrapped and clipped. Two changes fix it: the nav now collapses into
+           the burger at 992px (matching index.html), and 993-1250px drops the
+           wordmark so the remaining links always have room.
+           ------------------------------------------------------------------ */
+
+        /* Hidden on the desktop bar, revealed inside the burger menu below. */
+        .nav-mobile-only { display: none; }
+
+        @media (min-width: 993px) and (max-width: 1250px) {
+            .logo .logo-text { display: none; }
+            nav a { font-size: 0.72rem; letter-spacing: 0.08em; }
+            nav ul { gap: 1.5rem; }
+        }
+
+        @media (max-width: 992px) {
+            nav ul { display: none; }
+            .mobile-menu-toggle { display: flex; }
+            nav.open ul {
+                display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0;
+                background: var(--charcoal); padding: 1.5rem 2rem; gap: 1.25rem;
+            }
+            nav.open .nav-mobile-only { display: list-item; }
+            /* .region-switch collapses with the nav; India/UAE live in the
+               mobile menu as .nav-mobile-only items from here down. */
+            .region-switch { display: none; }
+        }
+    </style>
+
 </head>
 <body>
 
@@ -539,20 +567,25 @@
             </a>
             <nav id="nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="wedding-photographer-uae.html" class="active">UAE</a></li>
-                    <li><a href="wedding-photographer-india.html">India</a></li>
+                    <!-- Home is covered by the logo; India/UAE are covered by the
+                         .region-switch pills next to this nav. Both are demoted to
+                         .nav-mobile-only so the desktop bar stops carrying them
+                         twice, while the mobile menu (where .region-switch is
+                         hidden) still has them. -->
+                    <li class="nav-mobile-only"><a href="index.html">Home</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="wedding-photography.html">Weddings</a></li>
                     <li><a href="pre-wedding-shoots.html">Pre-Wedding</a></li>
                     <li><a href="blog.html">Blog</a></li>
+                    <li class="nav-mobile-only"><a href="wedding-photographer-uae.html" class="active">UAE</a></li>
+                    <li class="nav-mobile-only"><a href="wedding-photographer-india.html">India</a></li>
                 </ul>
             </nav>
             <div class="region-switch" aria-label="Choose your region">
                 <a href="wedding-photographer-uae.html" class="current" hreflang="en-AE">🇦🇪 UAE</a>
                 <a href="wedding-photographer-india.html" hreflang="en-IN">🇮🇳 India</a>
             </div>
-            <a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener" class="nav-cta">Get Quote</a>
+            <a href="index.html#contact" class="nav-cta">Get Quote</a>
             <div class="mobile-menu-toggle" id="menuToggle"><span></span><span></span><span></span></div>
         </div>
     </header>
@@ -565,7 +598,7 @@
             <p>A Dubai-based photography and cinematic film studio capturing weddings across Dubai, Abu Dhabi, Sharjah, Ras Al Khaimah and the wider UAE — with the artistry of a film and the honesty of a documentary.</p>
             <div class="hero-actions">
                 <a href="#gallery" class="btn btn-gold">See the Gallery</a>
-                <a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener" class="btn btn-outline">Check Availability</a>
+                <a href="index.html#contact" class="btn btn-outline">Check Availability</a>
             </div>
             <div class="trust-bar">
                 <div class="trust-item"><div class="num">1800+</div><div class="lbl">Weddings Captured</div></div>
@@ -635,7 +668,7 @@
                     <p>WeddingClickz Middle East works out of Bay Square in Business Bay, opposite DoubleTree by Hilton. That matters more than it sounds: we know which Dubai venues turn golden at 5pm, which ballrooms need extra lighting, where drone flights are cleared, and how long the drive from Downtown to Abu Dhabi really takes on a Friday.</p>
                     <p>Every UAE wedding is led by a senior photographer and cinematographer, never handed to juniors. We carry redundant cameras, lenses and storage on every shoot, and can provide female photographers for ladies-only functions at Nikah and Emirati celebrations.</p>
                     <p>From a quiet <em>haldi</em> at a Jumeirah villa to the roar of the <em>baraat</em> along the Marina, the <em>Nikah</em> at a Sharjah majlis and the <em>pheras</em> at a Ras Al Khaimah desert resort — we understand the rhythm of every celebration in the Emirates and stay one step ahead of the moment.</p>
-                    <a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener" class="btn btn-gold" style="margin-top:1rem;">Get an Instant Quote</a>
+                    <a href="index.html#contact" class="btn btn-gold" style="margin-top:1rem;">Request a Quote</a>
                 </div>
                 <div class="intro-media">
                     <img src="assets/gallery/wedding-photography-uae-banner.jpg" alt="WeddingClickz wedding photography in the UAE" loading="lazy">
@@ -656,9 +689,9 @@
             <div class="city-grid">
                 <a class="city-card" href="blog/dubai-wedding-photographer-guide.html"><h3>Dubai</h3><p>Downtown, Marina, Palm Jumeirah, Jumeirah, Business Bay, Al Seef and the Bab Al Shams desert. Read our Dubai photographer guide.</p></a>
                 <a class="city-card" href="blog/wedding-photographer-abu-dhabi.html"><h3>Abu Dhabi</h3><p>Emirates Palace, Saadiyat, Yas Island, Corniche and Qasr Al Sarab in the Liwa desert. Read our Abu Dhabi guide.</p></a>
-                <a class="city-card" href="https://weddingclickzquotation.com/" target="_blank" rel="noopener"><h3>Sharjah &amp; Ajman</h3><p>Majlis ceremonies, Al Noor Mosque surrounds, Al Qasba and beachfront resorts along the northern coast.</p></a>
-                <a class="city-card" href="https://weddingclickzquotation.com/" target="_blank" rel="noopener"><h3>Ras Al Khaimah</h3><p>Waldorf Astoria, Al Hamra and the Jebel Jais mountain road — the UAE's favourite destination-wedding backdrop.</p></a>
-                <a class="city-card" href="https://weddingclickzquotation.com/" target="_blank" rel="noopener"><h3>Al Ain &amp; Fujairah</h3><p>Green Mubazzarah, Jebel Hafeet and the east-coast beaches, for couples who want something quieter.</p></a>
+                <a class="city-card" href="index.html#contact"><h3>Sharjah &amp; Ajman</h3><p>Majlis ceremonies, Al Noor Mosque surrounds, Al Qasba and beachfront resorts along the northern coast.</p></a>
+                <a class="city-card" href="index.html#contact"><h3>Ras Al Khaimah</h3><p>Waldorf Astoria, Al Hamra and the Jebel Jais mountain road — the UAE's favourite destination-wedding backdrop.</p></a>
+                <a class="city-card" href="index.html#contact"><h3>Al Ain &amp; Fujairah</h3><p>Green Mubazzarah, Jebel Hafeet and the east-coast beaches, for couples who want something quieter.</p></a>
                 <a class="city-card" href="blog/wedding-photography-bahrain.html"><h3>Bahrain &amp; the GCC</h3><p>Manama, Doha, Muscat and Riyadh. Travel and stay quoted transparently. Read our Bahrain guide.</p></a>
             </div>
         </div>
@@ -783,9 +816,9 @@
     <!-- CTA -->
     <section class="cta-banner">
         <h2>Let's Tell <em>Your</em> Story</h2>
-        <p>Check your date, build your package and get an instant, itemised quote in minutes. No pressure, just clarity.</p>
+        <p>Tell us your dates and what you have in mind — we&rsquo;ll come back with an itemised quote within 24 hours. No pressure, just clarity.</p>
         <div class="hero-actions">
-            <a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener" class="btn btn-gold">Get Your Instant Quote</a>
+            <a href="index.html#contact" class="btn btn-gold">Request Your Quote</a>
             <a href="tel:+971543043283" class="btn btn-outline">Call +971 54 304 3283</a>
         </div>
     </section>
@@ -817,7 +850,7 @@
             <div class="footer-links">
                 <h4>Get Started</h4>
                 <ul>
-                    <li><a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener">Get a Quote</a></li>
+                    <li><a href="index.html#contact">Get a Quote</a></li>
                     <li><a href="index.html#contact">Contact Us</a></li>
                     <li><a href="index.html#about">About Us</a></li>
                     <li><a href="privacy-policy.html">Privacy Policy</a></li>

@@ -363,12 +363,41 @@
             .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
         }
         @media (max-width: 768px) {
-            nav ul { display: none; }
-            .mobile-menu-toggle { display: flex; }
-            nav.open ul { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--charcoal); padding: 1.5rem 2rem; gap: 1.25rem; }
             .steps { grid-template-columns: 1fr; }
         }
     </style>
+    <style>
+        /* ------------------------------------------------------------------
+           Header density (QA pass)
+
+           The bar carries the logo lockup, the nav, the region switch and the
+           Get Quote CTA. With the old 768px collapse point everything had to
+           fit into ~740px of usable width at 800px viewport, so the links
+           wrapped and clipped. Two changes fix it: the nav now collapses into
+           the burger at 992px (matching index.html), and 993-1250px drops the
+           wordmark so the remaining links always have room.
+           ------------------------------------------------------------------ */
+
+        /* Hidden on the desktop bar, revealed inside the burger menu below. */
+        .nav-mobile-only { display: none; }
+
+        @media (min-width: 993px) and (max-width: 1250px) {
+            .logo .logo-text { display: none; }
+            nav a { font-size: 0.72rem; letter-spacing: 0.08em; }
+            nav ul { gap: 1.5rem; }
+        }
+
+        @media (max-width: 992px) {
+            nav ul { display: none; }
+            .mobile-menu-toggle { display: flex; }
+            nav.open ul {
+                display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0;
+                background: var(--charcoal); padding: 1.5rem 2rem; gap: 1.25rem;
+            }
+            nav.open .nav-mobile-only { display: list-item; }
+        }
+    </style>
+
 </head>
 <body>
 
@@ -381,14 +410,15 @@
             </a>
             <nav id="nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <!-- Home is covered by the logo lockup; mobile-menu only. -->
+                    <li class="nav-mobile-only"><a href="index.html">Home</a></li>
                     <li><a href="wedding-photography.html">Wedding Photography</a></li>
                     <li><a href="pre-wedding-shoots.html" class="active">Pre-Wedding</a></li>
                     <li><a href="index.html#films">Films</a></li>
                     <li><a href="blog.html">Blog</a></li>
                 </ul>
             </nav>
-            <a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener" class="nav-cta">Get Quote</a>
+            <a href="index.html#contact" class="nav-cta">Get Quote</a>
             <div class="mobile-menu-toggle" id="menuToggle"><span></span><span></span><span></span></div>
         </div>
     </header>
@@ -400,7 +430,7 @@
             <h1>Before the Big Day, <em>Just the Two of You</em></h1>
             <p>A relaxed, cinematic couple shoot before your wedding, whether that's in the golden desert, against the Dubai skyline, on a quiet beach or in the studio. The real focus isn't the photographs. It's you.</p>
             <div class="hero-actions">
-                <a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener" class="btn btn-gold">Plan Your Shoot</a>
+                <a href="index.html#contact" class="btn btn-gold">Plan Your Shoot</a>
                 <a href="#packages" class="btn btn-outline">View Options</a>
             </div>
         </div>
@@ -425,7 +455,7 @@
                     <p>A pre-wedding shoot isn't about striking perfect poses. It's a few unhurried hours to laugh, hold hands and simply be together, while we quietly capture the way you look at each other.</p>
                     <p class="pull-quote">"The main focus isn't actually the photographs… it's you."</p>
                     <p>There's a lovely side-effect, too: couples who do a pre-wedding shoot are far more relaxed in front of the camera on the wedding day itself, and it shows in every frame. Think of it as a rehearsal for feeling comfortable, not for posing.</p>
-                    <a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener" class="btn btn-gold" style="margin-top:1rem;">Get an Instant Quote</a>
+                    <a href="index.html#contact" class="btn btn-gold" style="margin-top:1rem;">Request a Quote</a>
                 </div>
                 <div class="intro-media">
                     <img src="assets/gallery/relaxed-pre-wedding-couple-shoot-dubai.jpg" alt="Relaxed pre-wedding couple shoot in Dubai by WeddingClickz" loading="lazy">
@@ -440,7 +470,7 @@
             <div class="section-head">
                 <span class="section-label">Ways to Shoot</span>
                 <h2 class="section-title">Pre-Wedding <em>Options</em></h2>
-                <p class="section-sub">Two starting points to suit your time and your dream backdrop. Every shoot is fully customisable, so you can add outfits, locations, hair &amp; makeup or a cinematic reel, then get an instant, itemised quote.</p>
+                <p class="section-sub">Two starting points to suit your time and your dream backdrop. Every shoot is fully customisable, so you can add outfits, locations, hair &amp; makeup or a cinematic reel &mdash; just tell us what you have in mind.</p>
             </div>
             <div class="pkg-grid">
                 <div class="pkg-card">
@@ -454,7 +484,7 @@
                         <li>Online private gallery</li>
                         <li>Styling &amp; location guidance</li>
                     </ul>
-                    <a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener" class="btn btn-gold">Build This Shoot</a>
+                    <a href="index.html#contact" class="btn btn-gold">Enquire About This Shoot</a>
                 </div>
                 <div class="pkg-card featured">
                     <span class="pkg-flag">Most Loved</span>
@@ -469,10 +499,10 @@
                         <li>Drone shots (where permitted)</li>
                         <li>Priority styling &amp; location scouting</li>
                     </ul>
-                    <a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener" class="btn btn-gold">Build This Shoot</a>
+                    <a href="index.html#contact" class="btn btn-gold">Enquire About This Shoot</a>
                 </div>
             </div>
-            <p style="text-align:center;margin-top:2rem;font-size:0.85rem;color:var(--text-light);">Planning a destination pre-wedding shoot in the desert, Ras Al Khaimah or across Europe, think Santorini, Paris, Lake Como or the Alps? <a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener" style="color:var(--gold-dark);font-weight:600;">Request a custom quote →</a></p>
+            <p style="text-align:center;margin-top:2rem;font-size:0.85rem;color:var(--text-light);">Planning a destination pre-wedding shoot in the desert, Ras Al Khaimah or across Europe, think Santorini, Paris, Lake Como or the Alps? <a href="index.html#contact" style="color:var(--gold-dark);font-weight:600;">Request a custom quote →</a></p>
         </div>
     </section>
 
@@ -515,7 +545,7 @@
                 <p class="mosaic-status" id="pwStatus">Loading our latest couples…</p>
             </div>
             <div style="text-align:center;margin-top:2.5rem;">
-                <a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener" class="btn btn-gold">Plan Your Own Shoot</a>
+                <a href="index.html#contact" class="btn btn-gold">Plan Your Own Shoot</a>
             </div>
         </div>
     </section>
@@ -557,9 +587,9 @@
     <!-- CTA -->
     <section class="cta-banner">
         <h2>Let's Plan Your <em>Pre-Wedding Shoot</em></h2>
-        <p>Pick your backdrop, choose your options and get an instant, itemised quote in minutes.</p>
+        <p>Tell us your backdrop and the options you want — we&rsquo;ll come back with an itemised quote within 24 hours.</p>
         <div class="hero-actions">
-            <a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener" class="btn btn-gold">Get Your Instant Quote</a>
+            <a href="index.html#contact" class="btn btn-gold">Request Your Quote</a>
             <a href="tel:+971543043283" class="btn btn-outline">Call +971 54 304 3283</a>
         </div>
     </section>
@@ -589,7 +619,7 @@
             <div class="footer-links">
                 <h4>Get Started</h4>
                 <ul>
-                    <li><a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener">Get a Quote</a></li>
+                    <li><a href="index.html#contact">Get a Quote</a></li>
                     <li><a href="index.html#contact">Contact Us</a></li>
                     <li><a href="index.html#about">About Us</a></li>
                     <li><a href="privacy-policy.html">Privacy Policy</a></li>
@@ -615,16 +645,16 @@
     <section class="city-strip">
         <h2>Pre-Wedding &amp; Couple Shoots Across the UAE</h2>
         <p>
-            <a href="https://weddingclickzquotation.com/">Pre-Wedding Shoot in Dubai</a> ·
-            <a href="https://weddingclickzquotation.com/">Pre-Wedding Shoot in Abu Dhabi</a> ·
-            <a href="https://weddingclickzquotation.com/">Pre-Wedding Shoot in the Desert</a> ·
-            <a href="https://weddingclickzquotation.com/">Pre-Wedding Shoot in Ras Al Khaimah</a> ·
-            <a href="https://weddingclickzquotation.com/">Pre-Wedding Shoot in Sharjah</a> ·
-            <a href="https://weddingclickzquotation.com/">Engagement Photography Dubai</a> ·
-            <a href="https://weddingclickzquotation.com/">Couple Shoot UAE</a> ·
+            <a href="index.html#contact">Pre-Wedding Shoot in Dubai</a> ·
+            <a href="index.html#contact">Pre-Wedding Shoot in Abu Dhabi</a> ·
+            <a href="index.html#contact">Pre-Wedding Shoot in the Desert</a> ·
+            <a href="index.html#contact">Pre-Wedding Shoot in Ras Al Khaimah</a> ·
+            <a href="index.html#contact">Pre-Wedding Shoot in Sharjah</a> ·
+            <a href="index.html#contact">Engagement Photography Dubai</a> ·
+            <a href="index.html#contact">Couple Shoot UAE</a> ·
             <a href="wedding-photography.html">Wedding Photography</a> ·
             <a href="index.html#films">Cinematic Wedding Films</a> ·
-            <a href="https://weddingclickzquotation.com/">Pre-Wedding Shoot Packages</a>
+            <a href="index.html#contact">Pre-Wedding Shoot Packages</a>
         </p>
     </section>
 

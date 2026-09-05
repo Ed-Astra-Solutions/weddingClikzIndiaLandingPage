@@ -143,8 +143,7 @@
         "https://www.instagram.com/weddingclickz",
         "https://www.facebook.com/theweddingclickz/",
         "https://www.youtube.com/@weddingclickzphotography8190",
-        "https://in.pinterest.com/weddingclickz_/",
-        "https://weddingclickzquotation.com"
+        "https://in.pinterest.com/weddingclickz_/"
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -322,7 +321,7 @@
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://weddingclickz.com/"},
         {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://weddingclickz.com/blog.html"},
-        {"@type": "ListItem", "position": 3, "name": "Get Quote", "item": "https://weddingclickzquotation.com/"}
+        {"@type": "ListItem", "position": 3, "name": "Get a Quote", "item": "https://weddingclickz.com/#contact"}
       ]
     }
     </script>
@@ -505,12 +504,25 @@
         nav ul {
             display: flex;
             list-style: none;
-            gap: 2.5rem;
+            /* Fluid instead of a fixed 2.5rem: the bar also carries the logo
+               lockup and the region/contact pills, so the gap has to give
+               before the links start wrapping. */
+            gap: clamp(1.25rem, 2.2vw, 2.5rem);
         }
 
         /* Mobile-only nav items: hidden on the desktop bar, revealed in
            the fullscreen menu via the 992px media query below. */
         .nav-mobile-only { display: none; }
+
+        /* Squeeze band: 993px-1250px is where the desktop bar is tightest —
+           the nav has not collapsed into the burger yet, but there is no room
+           for the full logo lockup alongside it. Drop the wordmark (the logo
+           mark still carries the brand) and tighten the links. */
+        @media (min-width: 993px) and (max-width: 1250px) {
+            .logo .logo-word { display: none; }
+            #nav a { font-size: 0.72rem; letter-spacing: 0.1em; }
+            .header-actions { gap: 0.65rem; }
+        }
 
         nav a {
             text-decoration: none;
@@ -5846,16 +5858,20 @@
             
             <nav id="nav">
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <!-- Desktop bar: six items only. Home is covered by the logo,
+                         and India/UAE are covered by the region pill in
+                         .header-actions, so both are demoted to .nav-mobile-only
+                         (still in the DOM, still crawlable, shown in the
+                         fullscreen mobile menu where there is room). -->
+                    <li class="nav-mobile-only"><a href="#home">Home</a></li>
                     <li><a href="#archives">Gallery</a></li>
-                    <li><a href="wedding-photographer-india.html">India</a></li>
-                    <li><a href="wedding-photographer-uae.html">UAE</a></li>
                     <li><a href="wedding-photography.html">Weddings</a></li>
                     <li><a href="pre-wedding-shoots.html">Pre-Wedding</a></li>
                     <li><a href="#films">Films</a></li>
-                    <li class="nav-mobile-only"><a href="#prewedding">Pre-Wedding</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#about">About</a></li>
+                    <li class="nav-mobile-only"><a href="wedding-photographer-india.html">India</a></li>
+                    <li class="nav-mobile-only"><a href="wedding-photographer-uae.html">UAE</a></li>
                 </ul>
             </nav>
 
@@ -6449,7 +6465,7 @@
                 <details class="faq-item">
                     <summary>How much does wedding photography cost with WeddingClickz? <span class="faq-icon">+</span></summary>
                     <div class="faq-answer">
-                        <p>Our wedding photography packages typically <strong>start from ₹75,000 for single-day candid coverage</strong> and scale up to ₹5,00,000+ for multi-day luxury weddings with cinematic films, drone, albums and destination travel. Final pricing depends on the number of events, locations, crew size and deliverables. <a href="https://weddingclickzquotation.com/">Request a custom quote</a> for accurate numbers.</p>
+                        <p>Our wedding photography packages typically <strong>start from ₹75,000 for single-day candid coverage</strong> and scale up to ₹5,00,000+ for multi-day luxury weddings with cinematic films, drone, albums and destination travel. Final pricing depends on the number of events, locations, crew size and deliverables. <a href="#contact">Request a custom quote</a> for accurate numbers.</p>
                     </div>
                 </details>
 
@@ -6560,7 +6576,7 @@
                         <li><a href="#about">About Us</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener">Get Quote</a></li>
+                        <li><a href="#contact">Get Quote</a></li>
                     </ul>
                 </div>
 
@@ -6644,7 +6660,7 @@
                 <a href="#contact" style="color:#888;text-decoration:none;">Wedding Photographer Kerala</a> ·
                 <a href="#contact" style="color:#888;text-decoration:none;">Destination Wedding Photography</a> ·
                 <a href="#films" style="color:#888;text-decoration:none;">Cinematic Wedding Films</a> ·
-                <a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener" style="color:#888;text-decoration:none;">Wedding Photography Packages & Quotes</a>
+                <a href="#contact" style="color:#888;text-decoration:none;">Wedding Photography Packages & Quotes</a>
             </p>
         </div>
     </section>

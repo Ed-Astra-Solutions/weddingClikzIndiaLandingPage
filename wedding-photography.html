@@ -407,15 +407,41 @@
             .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
         }
         @media (max-width: 768px) {
+            .steps { grid-template-columns: 1fr; }
+        }
+    </style>
+    <style>
+        /* ------------------------------------------------------------------
+           Header density (QA pass)
+
+           The bar carries the logo lockup, the nav, the region switch and the
+           Get Quote CTA. With the old 768px collapse point everything had to
+           fit into ~740px of usable width at 800px viewport, so the links
+           wrapped and clipped. Two changes fix it: the nav now collapses into
+           the burger at 992px (matching index.html), and 993-1250px drops the
+           wordmark so the remaining links always have room.
+           ------------------------------------------------------------------ */
+
+        /* Hidden on the desktop bar, revealed inside the burger menu below. */
+        .nav-mobile-only { display: none; }
+
+        @media (min-width: 993px) and (max-width: 1250px) {
+            .logo .logo-text { display: none; }
+            nav a { font-size: 0.72rem; letter-spacing: 0.08em; }
+            nav ul { gap: 1.5rem; }
+        }
+
+        @media (max-width: 992px) {
             nav ul { display: none; }
             .mobile-menu-toggle { display: flex; }
             nav.open ul {
                 display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0;
                 background: var(--charcoal); padding: 1.5rem 2rem; gap: 1.25rem;
             }
-            .steps { grid-template-columns: 1fr; }
+            nav.open .nav-mobile-only { display: list-item; }
         }
     </style>
+
 </head>
 <body>
 
@@ -428,14 +454,15 @@
             </a>
             <nav id="nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <!-- Home is covered by the logo lockup; mobile-menu only. -->
+                    <li class="nav-mobile-only"><a href="index.html">Home</a></li>
                     <li><a href="wedding-photography.html" class="active">Wedding Photography</a></li>
                     <li><a href="pre-wedding-shoots.html">Pre-Wedding</a></li>
                     <li><a href="index.html#films">Films</a></li>
                     <li><a href="blog.html">Blog</a></li>
                 </ul>
             </nav>
-            <a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener" class="nav-cta">Get Quote</a>
+            <a href="index.html#contact" class="nav-cta">Get Quote</a>
             <div class="mobile-menu-toggle" id="menuToggle"><span></span><span></span><span></span></div>
         </div>
     </header>
@@ -447,7 +474,7 @@
             <h1>Every Wedding Is a <em>Story</em> Worth Telling</h1>
             <p>A Dubai-based studio capturing Hindu, Muslim Nikah, Christian, Sikh and South Indian weddings across Dubai, Abu Dhabi and the UAE, with the artistry of a film and the honesty of a documentary.</p>
             <div class="hero-actions">
-                <a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener" class="btn btn-gold">Check Availability</a>
+                <a href="index.html#contact" class="btn btn-gold">Check Availability</a>
                 <a href="#gallery" class="btn btn-outline">View Portfolio</a>
             </div>
             <div class="trust-bar">
@@ -478,7 +505,7 @@
                     <p>A wedding isn't a checklist of shots. It's a day of stolen glances, happy tears and moments that only happen once. From our studio in Business Bay, Dubai, we blend a documentary instinct with editorial polish, so your gallery feels like the day actually felt, not just how it looked.</p>
                     <p>Every wedding is led by a senior photographer and cinematographer, never handed off to juniors. We carry redundant cameras, lenses and storage on every shoot, so your memories are protected from the first look to the final farewell.</p>
                     <p>From the quiet <em>haldi</em> at a Dubai villa to the roar of the <em>baraat</em> along the Marina and the sacred <em>pheras</em> at a desert resort, we understand the rhythm of every celebration and stay one step ahead of the moment.</p>
-                    <a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener" class="btn btn-gold" style="margin-top:1rem;">Get an Instant Quote</a>
+                    <a href="index.html#contact" class="btn btn-gold" style="margin-top:1rem;">Request a Quote</a>
                 </div>
                 <div class="intro-media">
                     <img src="assets/gallery/candid-wedding-photography-couple-dubai.jpg" alt="Candid wedding photography of a couple in Dubai by WeddingClickz" loading="lazy">
@@ -657,9 +684,9 @@
     <!-- CTA -->
     <section class="cta-banner">
         <h2>Let's Tell <em>Your</em> Story</h2>
-        <p>Check your date, build your package and get an instant, itemised quote in minutes. No pressure, just clarity.</p>
+        <p>Tell us your dates and what you have in mind — we&rsquo;ll come back with an itemised quote within 24 hours. No pressure, just clarity.</p>
         <div class="hero-actions">
-            <a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener" class="btn btn-gold">Get Your Instant Quote</a>
+            <a href="index.html#contact" class="btn btn-gold">Request Your Quote</a>
             <a href="tel:+971543043283" class="btn btn-outline">Call +971 54 304 3283</a>
         </div>
     </section>
@@ -689,7 +716,7 @@
             <div class="footer-links">
                 <h4>Get Started</h4>
                 <ul>
-                    <li><a href="https://weddingclickzquotation.com/" target="_blank" rel="noopener">Get a Quote</a></li>
+                    <li><a href="index.html#contact">Get a Quote</a></li>
                     <li><a href="index.html#contact">Contact Us</a></li>
                     <li><a href="index.html#about">About Us</a></li>
                     <li><a href="privacy-policy.html">Privacy Policy</a></li>
@@ -715,19 +742,19 @@
     <section class="city-strip">
         <h2>Wedding Photographers Across the UAE &amp; GCC</h2>
         <p>
-            <a href="https://weddingclickzquotation.com/">Wedding Photographer in Dubai</a> ·
-            <a href="https://weddingclickzquotation.com/">Wedding Photographer in Abu Dhabi</a> ·
-            <a href="https://weddingclickzquotation.com/">Wedding Photographer in Sharjah</a> ·
-            <a href="https://weddingclickzquotation.com/">Wedding Photographer in Ajman</a> ·
-            <a href="https://weddingclickzquotation.com/">Wedding Photographer in Ras Al Khaimah</a> ·
-            <a href="https://weddingclickzquotation.com/">Wedding Photographer in Al Ain</a> ·
-            <a href="https://weddingclickzquotation.com/">Wedding Photography UAE</a> ·
-            <a href="https://weddingclickzquotation.com/">Indian Wedding Photographer Dubai</a> ·
-            <a href="https://weddingclickzquotation.com/">Wedding Photographer Bahrain</a> ·
-            <a href="https://weddingclickzquotation.com/">Wedding Photographer Qatar</a> ·
+            <a href="index.html#contact">Wedding Photographer in Dubai</a> ·
+            <a href="index.html#contact">Wedding Photographer in Abu Dhabi</a> ·
+            <a href="index.html#contact">Wedding Photographer in Sharjah</a> ·
+            <a href="index.html#contact">Wedding Photographer in Ajman</a> ·
+            <a href="index.html#contact">Wedding Photographer in Ras Al Khaimah</a> ·
+            <a href="index.html#contact">Wedding Photographer in Al Ain</a> ·
+            <a href="index.html#contact">Wedding Photography UAE</a> ·
+            <a href="index.html#contact">Indian Wedding Photographer Dubai</a> ·
+            <a href="index.html#contact">Wedding Photographer Bahrain</a> ·
+            <a href="index.html#contact">Wedding Photographer Qatar</a> ·
             <a href="pre-wedding-shoots.html">Pre-Wedding Shoots</a> ·
             <a href="index.html#films">Cinematic Wedding Films</a> ·
-            <a href="https://weddingclickzquotation.com/">Wedding Photography Packages</a>
+            <a href="index.html#contact">Wedding Photography Packages</a>
         </p>
     </section>
 
