@@ -337,6 +337,20 @@
             font-size: 0.85rem;
             line-height: 1.55;
         }
+
+        /* Listing thumbnails: each card shows its post's real cover image. */
+        .fg-card { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
+        .fg-thumb {
+            width: 100%; height: 190px; object-fit: cover; display: block;
+            border-bottom: 1px solid var(--border-subtle);
+            transition: transform 0.5s ease;
+        }
+        .fg-card > .fg-cat { margin-top: 1.25rem; }
+        .fg-card > .fg-cat, .fg-card > h3, .fg-card > p { padding-inline: 1.5rem; }
+        .fg-card > p { padding-bottom: 1.5rem; }
+        .fg-card:hover .fg-thumb { transform: scale(1.05); }
+        @media (max-width: 700px) { .fg-thumb { height: 200px; } }
+
         @media (max-width: 992px) {
             .fg-grid { grid-template-columns: repeat(2, 1fr); }
         }
@@ -793,166 +807,199 @@
             </div>
             <div class="fg-grid">
                 <a class="fg-card" href="/blog/business-bay-light-line.html">
+                    <img class="fg-thumb" src="https://weddingclickz.com/blog/images/dubai-pre-wedding-shoot-golden-hour.jpg" alt="Golden hour light on the upper floors of Business Bay towers, Dubai, photographed by WeddingClickz" width="1200" height="800" loading="lazy" decoding="async">
                     <span class="fg-cat">Data · Business Bay</span>
                     <h3>The Business Bay Light Line</h3>
                     <p>Our own solar almanac for Dubai's tower district – golden hour by month, and the exact floor still lit at sunset.</p>
                 </a>
                 <a class="fg-card" href="/blog/dubai-golden-hour-33-minutes.html">
+                    <img class="fg-thumb" src="https://weddingclickz.com/blog/images/uae-wedding-couple-portrait.jpg" alt="Couple backlit during Dubai's short golden hour window photographed by WeddingClickz" width="1200" height="800" loading="lazy" decoding="async">
                     <span class="fg-cat">Planning · Dubai</span>
                     <h3>Dubai's Golden Hour Is 33 Minutes</h3>
                     <p>Not 60. Why latitude halves the window – and a minute-by-minute run sheet for shooting inside it.</p>
                 </a>
                 <a class="fg-card" href="/blog/business-bay-rooftop-photography-floors.html">
+                    <img class="fg-thumb" src="https://weddingclickz.com/blog/images/indian-wedding-couple-portrait-dubai.jpg" alt="Couple photographed on a high floor above Business Bay at golden hour by WeddingClickz" width="1200" height="800" loading="lazy" decoding="async">
                     <span class="fg-cat">Technique · Business Bay</span>
                     <h3>Shooting Above the Shadow Line</h3>
                     <p>In Business Bay, height beats location. The five altitude tiers and where golden hour actually exists.</p>
                 </a>
                 <a class="fg-card" href="/blog/business-bay-canal-golden-hour.html">
+                    <img class="fg-thumb" src="https://weddingclickz.com/blog/images/pre-wedding-shoot-dubai.jpg" alt="Couple photographed at blue hour on the Marasi promenade, Business Bay, Dubai by WeddingClickz" width="1200" height="800" loading="lazy" decoding="async">
                     <span class="fg-cat">Locations · Business Bay</span>
                     <h3>Canal Level: Marasi's Real Window</h3>
                     <p>The promenade peaks before sunset, not at it. Month-by-month soft-light and blue-hour timings.</p>
                 </a>
                 <a class="fg-card" href="/blog/pre-wedding-shoot-locations-dubai.html">
+                    <img class="fg-thumb" src="https://weddingclickz.com/blog/images/pre-wedding-shoot-dubai.jpg" alt="Couple at a Dubai pre-wedding shoot location photographed by WeddingClickz" width="1200" height="800" loading="lazy" decoding="async">
                     <span class="fg-cat">Pre-Wedding · Dubai</span>
                     <h3>15 Pre-Wedding Shoot Locations in Dubai</h3>
                     <p>The spots worth your money – permits, exact light windows and 3 under-shot Old Dubai gems.</p>
                 </a>
                 <a class="fg-card" href="/blog/pre-wedding-shoot-locations-abu-dhabi.html">
+                    <img class="fg-thumb" src="https://weddingclickz.com/blog/images/pre-wedding-shoot-abu-dhabi.jpg" alt="Couple at an Abu Dhabi pre-wedding shoot location photographed by WeddingClickz" width="1200" height="800" loading="lazy" decoding="async">
                     <span class="fg-cat">Pre-Wedding · Abu Dhabi</span>
                     <h3>Pre-Wedding Shoot Locations in Abu Dhabi</h3>
                     <p>The quieter, better-photographed alternative to Dubai – Mosque, Louvre, Qasr Al Watan, Liwa.</p>
                 </a>
                 <a class="fg-card" href="/blog/wedding-photographer-abu-dhabi.html">
+                    <img class="fg-thumb" src="https://weddingclickz.com/blog/images/wedding-photographer-abu-dhabi.jpg" alt="Indian wedding celebration at an Abu Dhabi venue photographed by WeddingClickz" width="1200" height="800" loading="lazy" decoding="async">
                     <span class="fg-cat">Venues · Abu Dhabi</span>
                     <h3>Wedding Photographer in Abu Dhabi: Venue Guide</h3>
                     <p>Emirates Palace to Qasr Al Sarab – what a pro notices about your venue before you book.</p>
                 </a>
                 <a class="fg-card" href="/blog/wedding-photography-bahrain.html">
+                    <img class="fg-thumb" src="https://weddingclickz.com/blog/images/wedding-photography-bahrain.jpg" alt="Indian wedding in Bahrain photographed by WeddingClickz" width="1200" height="800" loading="lazy" decoding="async">
                     <span class="fg-cat">Destination · Bahrain</span>
                     <h3>Wedding Photography in Bahrain (2026)</h3>
                     <p>Venues, etiquette, travel from India and Dubai, and BHD pricing for a Manama wedding.</p>
                 </a>
                 <a class="fg-card" href="/blog/how-to-choose-wedding-photographer-uae.html">
+                    <img class="fg-thumb" src="https://weddingclickz.com/blog/images/how-to-choose-wedding-photographer-uae.jpg" alt="Couple at a UAE wedding photographed by WeddingClickz" width="1200" height="800" loading="lazy" decoding="async">
                     <span class="fg-cat">Wedding Planning · UAE</span>
                     <h3>How to Choose a Wedding Photographer in the UAE</h3>
                     <p>Start with style not price, match photographer to venue, and the contract clauses that matter.</p>
                 </a>
                 <a class="fg-card" href="/blog/indian-wedding-photographers-dubai.html">
+                    <img class="fg-thumb" src="https://weddingclickz.com/blog/images/indian-wedding-photographer-dubai.jpg" alt="Indian wedding couple photographed in Dubai by WeddingClickz" width="1200" height="800" loading="lazy" decoding="async">
                     <span class="fg-cat">Photography · Dubai</span>
                     <h3>Indian Wedding Photographers in Dubai</h3>
                     <p>Haldi to Vidai coverage, cultural fluency, permits and crew for a multi-day UAE wedding.</p>
                 </a>
                 <a class="fg-card" href="/blog/how-to-choose-wedding-photographer-india.html">
+                    <img class="fg-thumb" src="/blog/images/india/bangalore-dhrithi-nitish-00.jpg" alt="A wedding ceremony photographed in Bangalore by WeddingClickz" width="1200" height="800" loading="lazy" decoding="async">
                     <span class="fg-cat">Wedding Planning</span>
                     <h3>How to Choose the Right Wedding Photographer in India (2026)</h3>
                     <p>Styles, packages, contracts and the questions every couple should ask before booking.</p>
                 </a>
                 <a class="fg-card" href="/blog/wedding-photography-cost-bangalore.html">
+                    <img class="fg-thumb" src="/blog/images/india/bangalore-sonal-sourav-06.jpg" alt="A wedding ceremony photographed in Bangalore by WeddingClickz" width="1200" height="800" loading="lazy" decoding="async">
                     <span class="fg-cat">Pricing</span>
                     <h3>Wedding Photography Cost in Bangalore (2026)</h3>
                     <p>Real packages and prices from entry-level to premium cinematic studios.</p>
                 </a>
                 <a class="fg-card" href="/blog/best-pre-wedding-shoot-locations-bangalore.html">
+                    <img class="fg-thumb" src="/blog/images/india/bangalore-akhila-shrimukh-02.jpg" alt="A couple before their wedding photographed in Bangalore by WeddingClickz" width="1200" height="771" loading="lazy" decoding="async">
                     <span class="fg-cat">Pre-Wedding</span>
                     <h3>15 Best Pre-Wedding Shoot Locations Near Bangalore</h3>
                     <p>Heritage palaces, lakes, coffee estates and forts – mapped, ranked and shot.</p>
                 </a>
                 <a class="fg-card" href="/blog/destination-wedding-photographer-india.html">
+                    <img class="fg-thumb" src="/blog/images/india/bangalore-akshatha-vishnu-04.jpg" alt="A destination wedding celebration photographed in Bangalore by WeddingClickz" width="1200" height="800" loading="lazy" decoding="async">
                     <span class="fg-cat">Destination</span>
                     <h3>Destination Wedding Photography in India (2026)</h3>
                     <p>Top venues, real costs, travel logistics and creative direction.</p>
                 </a>
                 <a class="fg-card" href="/blog/candid-vs-traditional-wedding-photography.html">
+                    <img class="fg-thumb" src="/assets/gallery/candid-wedding-moment-uae.jpg" alt="Candid wedding photograph of an Indian bride laughing during a ritual" width="1800" height="2700" loading="lazy" decoding="async">
                     <span class="fg-cat">Photography Styles</span>
                     <h3>Candid vs Traditional Wedding Photography</h3>
                     <p>Side-by-side comparison – which style suits your wedding.</p>
                 </a>
                 <a class="fg-card" href="/blog/dubai-wedding-photographer-guide.html">
+                    <img class="fg-thumb" src="/assets/gallery/wedding-photography-dubai-hero.jpg" alt="Indian wedding photography at a luxury Dubai venue with the skyline behind" width="1800" height="2914" loading="lazy" decoding="async">
                     <span class="fg-cat">Destination · UAE</span>
                     <h3>Indian Wedding Photographer in Dubai (2026)</h3>
                     <p>Costs, venues, drone permits and travel logistics for Indian weddings in the UAE.</p>
                 </a>
                 <a class="fg-card" href="/blog/drone-wedding-photography-india.html">
+                    <img class="fg-thumb" src="/blog/images/india/bangalore-aviva-abhishek-04.jpg" alt="A wedding celebration photographed in Bangalore by WeddingClickz" width="1200" height="800" loading="lazy" decoding="async">
                     <span class="fg-cat">Drone & Aerial</span>
                     <h3>Drone Wedding Photography in India (2026)</h3>
                     <p>DGCA rules, best aerial shots, costs and how to book a legal drone team for your wedding.</p>
                 </a>
                 <a class="fg-card" href="/blog/south-indian-wedding-photography.html">
+                    <img class="fg-thumb" src="/blog/images/india/bangalore-krithika-rakshith-12.jpg" alt="A South Indian wedding ceremony photographed in Bangalore by WeddingClickz" width="1200" height="782" loading="lazy" decoding="async">
                     <span class="fg-cat">South Indian Weddings</span>
                     <h3>South Indian Wedding Photography: Tamil, Telugu, Kannada & Kerala (2026)</h3>
                     <p>Key rituals, must-capture frames and photographer tips across four major South Indian traditions.</p>
                 </a>
                 <a class="fg-card" href="/blog/wedding-photography-checklist-india.html">
+                    <img class="fg-thumb" src="/blog/images/india/bangalore-sonal-sourav-02.jpg" alt="A wedding day moment photographed in Bangalore by WeddingClickz" width="1200" height="800" loading="lazy" decoding="async">
                     <span class="fg-cat">Wedding Planning</span>
                     <h3>Indian Wedding Photography Checklist: 47 Shots You Must Not Miss</h3>
                     <p>The complete shot list to share with your photographer before your wedding day.</p>
                 </a>
                 <a class="fg-card" href="/blog/udaipur-destination-wedding-photographer.html">
+                    <img class="fg-thumb" src="/blog/images/india/bangalore-shraddha-chirag-12.jpg" alt="A destination wedding celebration photographed in Bangalore by WeddingClickz" width="1200" height="800" loading="lazy" decoding="async">
                     <span class="fg-cat">Destination · Rajasthan</span>
                     <h3>Udaipur Destination Wedding Photographer: Palaces, Costs & Tips (2026)</h3>
                     <p>Palace venues, drone permits, travel costs and booking timelines for Udaipur weddings.</p>
                 </a>
                 <a class="fg-card" href="/blog/wedding-reels-instagram-couple-shoot-india.html">
+                    <img class="fg-thumb" src="/blog/images/india/bangalore-vaishnavi-and-karthik-08.jpg" alt="A couple portrait photographed in Bangalore by WeddingClickz" width="1200" height="800" loading="lazy" decoding="async">
                     <span class="fg-cat">Reels & Instagram</span>
                     <h3>Wedding Reels & Instagram Couple Shoots: Ideas & Tips (2026)</h3>
                     <p>The 12 trending Reel concepts, how to brief your photographer and what to wear.</p>
                 </a>
                 <a class="fg-card" href="/blog/kerala-wedding-photography-guide.html">
+                    <img class="fg-thumb" src="/blog/images/india/bangalore-dhrithi-nitish-15.jpg" alt="A South Indian wedding ritual photographed in Bangalore by WeddingClickz" width="1200" height="809" loading="lazy" decoding="async">
                     <span class="fg-cat">Kerala Weddings</span>
                     <h3>Kerala Wedding Photography: Nair, Syrian Christian & Hindu Guide (2026)</h3>
                     <p>Kasavu sarees, backwater venues, monsoon shoots and tradition-specific ritual frames.</p>
                 </a>
                 <a class="fg-card" href="/blog/wedding-photography-cost-india-2025.html">
+                    <img class="fg-thumb" src="/blog/images/india/bangalore-sonal-sourav-10.jpg" alt="A wedding ceremony photographed in Bangalore by WeddingClickz" width="1200" height="800" loading="lazy" decoding="async">
                     <span class="fg-cat">Pricing</span>
                     <h3>Wedding Photography Cost in India 2025: Complete Pricing Guide</h3>
                     <p>Tier-by-tier pricing breakdown, city comparisons, hidden fees and what you get at each budget.</p>
                 </a>
                 <a class="fg-card" href="/blog/candid-vs-traditional-wedding-photography-india.html">
+                    <img class="fg-thumb" src="/blog/images/india/bangalore-akshatha-vishnu-00.jpg" alt="A candid, unposed wedding moment photographed in Bangalore by WeddingClickz" width="1200" height="792" loading="lazy" decoding="async">
                     <span class="fg-cat">Photography Styles</span>
                     <h3>Candid vs Traditional Wedding Photography India: Which Is Right For You</h3>
                     <p>The real differences in approach, output and cost — with a style guide to help you decide.</p>
                 </a>
                 <a class="fg-card" href="/blog/pre-wedding-shoot-ideas-india-2025.html">
+                    <img class="fg-thumb" src="/blog/images/india/bangalore-keerthana-arnav-09.jpg" alt="A couple portrait photographed in Bangalore by WeddingClickz" width="1200" height="787" loading="lazy" decoding="async">
                     <span class="fg-cat">Pre-Wedding</span>
                     <h3>Pre-Wedding Shoot Ideas India 2025: Locations, Themes & Outfits</h3>
                     <p>City-by-city location guide, trending outfit combinations and how to brief your photographer.</p>
                 </a>
                 <a class="fg-card" href="/blog/destination-wedding-photography-india-guide.html">
+                    <img class="fg-thumb" src="/blog/images/india/bangalore-akshatha-vishnu-08.jpg" alt="A destination wedding celebration photographed in Bangalore by WeddingClickz" width="1200" height="800" loading="lazy" decoding="async">
                     <span class="fg-cat">Destination Weddings</span>
                     <h3>Destination Wedding Photography India: Complete 2025 Guide</h3>
                     <p>Five best destinations, travel logistics, cost breakdown and planning a flawless destination shoot.</p>
                 </a>
                 <a class="fg-card" href="/blog/south-indian-wedding-photography-guide.html">
+                    <img class="fg-thumb" src="/blog/images/india/bangalore-krithika-rakshith-00.jpg" alt="A South Indian wedding ceremony photographed in Bangalore by WeddingClickz" width="1200" height="800" loading="lazy" decoding="async">
                     <span class="fg-cat">Cultural Guides</span>
                     <h3>South Indian Wedding Photography: Tamil, Telugu, Kannada & Malayali Guide</h3>
                     <p>Tradition-specific photography for all four South Indian wedding traditions — rituals, timing and equipment.</p>
                 </a>
                 <a class="fg-card" href="/blog/drone-wedding-photography-india-2025.html">
+                    <img class="fg-thumb" src="/blog/images/india/bangalore-aviva-abhishek-00.jpg" alt="A wedding celebration photographed in Bangalore by WeddingClickz" width="1200" height="743" loading="lazy" decoding="async">
                     <span class="fg-cat">Drone & Tech</span>
                     <h3>Drone Wedding Photography India 2025: DGCA Rules & Shot Guide</h3>
                     <p>Updated DGCA regulations, no-fly zones, drone categories and 8 must-have aerial wedding shots.</p>
                 </a>
                 <a class="fg-card" href="/blog/wedding-cinematography-india-highlight-film-guide.html">
+                    <img class="fg-thumb" src="/blog/images/india/bangalore-shravya-yash-04.jpg" alt="A wedding celebration photographed in Bangalore by WeddingClickz" width="1200" height="813" loading="lazy" decoding="async">
                     <span class="fg-cat">Cinematography</span>
                     <h3>Wedding Cinematography India: What Makes a Great Highlight Film</h3>
                     <p>Anatomy of a cinematic wedding film, equipment guide, same-day edit explained and red flags to avoid.</p>
                 </a>
                 <a class="fg-card" href="/blog/marwari-wedding-photography-guide.html">
+                    <img class="fg-thumb" src="/blog/images/india/bangalore-dhrithi-nitish-25.jpg" alt="A traditional Indian wedding ritual photographed in Bangalore by WeddingClickz" width="1200" height="800" loading="lazy" decoding="async">
                     <span class="fg-cat">Cultural Guides</span>
                     <h3>Marwari Wedding Photography: 5-Day Timeline & Visual Handbook</h3>
                     <p>Day-by-day guide from Sagai to Vidai, crew sizing, visual signatures and Rajasthani venue tips.</p>
                 </a>
                 <a class="fg-card" href="/blog/wedding-photography-shot-list-india.html">
+                    <img class="fg-thumb" src="/blog/images/india/bangalore-tanisha-nikhil-02.jpg" alt="A wedding day moment photographed in Bangalore by WeddingClickz" width="1200" height="800" loading="lazy" decoding="async">
                     <span class="fg-cat">Photography Tips</span>
                     <h3>Indian Wedding Photography Shot List: 50 Must-Have Photos</h3>
                     <p>The complete checklist — getting ready, ceremony, reception, vidai — share with your photographer.</p>
                 </a>
                 <a class="fg-card" href="/blog/indian-wedding-photographer-dubai-abu-dhabi.html">
+                    <img class="fg-thumb" src="/assets/gallery/wedding-portrait-photography-abu-dhabi.jpg" alt="Dubai skyline wedding photography Burj Khalifa background Indian wedding NRI" width="1800" height="2700" loading="lazy" decoding="async">
                     <span class="fg-cat">Destination Photography</span>
                     <h3>Indian Wedding Photographer in Dubai & Abu Dhabi: NRI Guide</h3>
                     <p>UAE venue permits, fly-in costs, best venues and pre-wedding locations for NRI couples.</p>
                 </a>
                 <a class="fg-card" href="/blog/wedding-photography-trends-india-2025-2026.html">
+                    <img class="fg-thumb" src="/blog/images/india/bangalore-vaishnavi-and-karthik-00.jpg" alt="A wedding celebration photographed in Bangalore by WeddingClickz" width="1200" height="799" loading="lazy" decoding="async">
                     <span class="fg-cat">Trends</span>
                     <h3>Wedding Photography Trends India 2025–2026: 10 Styles Defining the Decade</h3>
                     <p>Film grain, dark moody, micro-weddings, SDE, aerial sequences and AI-assisted editing — what's in and out.</p>
