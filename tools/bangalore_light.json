@@ -1,0 +1,258 @@
+{
+ "monthly": {
+  "Jan": {
+   "sunrise": "06:46",
+   "sunset": "18:12",
+   "morning": "06:46-07:16",
+   "morning_min": 30,
+   "gate": "06:26",
+   "evening": "17:42-18:12",
+   "evening_min": 30,
+   "az_sunrise": 111.5,
+   "az_sunset": 248.6,
+   "from_sunrise": "ESE",
+   "from_sunset": "WSW"
+  },
+  "Feb": {
+   "sunrise": "06:42",
+   "sunset": "18:25",
+   "morning": "06:42-07:11",
+   "morning_min": 29,
+   "gate": "06:22",
+   "evening": "17:57-18:25",
+   "evening_min": 29,
+   "az_sunrise": 102.9,
+   "az_sunset": 257.3,
+   "from_sunrise": "ESE",
+   "from_sunset": "WSW"
+  },
+  "Mar": {
+   "sunrise": "06:27",
+   "sunset": "18:30",
+   "morning": "06:27-06:55",
+   "morning_min": 28,
+   "gate": "06:07",
+   "evening": "18:02-18:30",
+   "evening_min": 28,
+   "az_sunrise": 92.1,
+   "az_sunset": 268.1,
+   "from_sunrise": "E",
+   "from_sunset": "W"
+  },
+  "Apr": {
+   "sunrise": "06:07",
+   "sunset": "18:32",
+   "morning": "06:07-06:36",
+   "morning_min": 28,
+   "gate": "05:47",
+   "evening": "18:04-18:32",
+   "evening_min": 28,
+   "az_sunrise": 79.8,
+   "az_sunset": 280.3,
+   "from_sunrise": "E",
+   "from_sunset": "W"
+  },
+  "May": {
+   "sunrise": "05:54",
+   "sunset": "18:38",
+   "morning": "05:54-06:24",
+   "morning_min": 30,
+   "gate": "05:34",
+   "evening": "18:08-18:38",
+   "evening_min": 30,
+   "az_sunrise": 70.5,
+   "az_sunset": 289.7,
+   "from_sunrise": "ENE",
+   "from_sunset": "WNW"
+  },
+  "Jun": {
+   "sunrise": "05:54",
+   "sunset": "18:47",
+   "morning": "05:54-06:24",
+   "morning_min": 31,
+   "gate": "05:34",
+   "evening": "18:16-18:47",
+   "evening_min": 31,
+   "az_sunrise": 65.8,
+   "az_sunset": 294.2,
+   "from_sunrise": "ENE",
+   "from_sunset": "WNW"
+  },
+  "Jul": {
+   "sunrise": "06:01",
+   "sunset": "18:50",
+   "morning": "06:01-06:31",
+   "morning_min": 30,
+   "gate": "05:41",
+   "evening": "18:20-18:50",
+   "evening_min": 30,
+   "az_sunrise": 67.6,
+   "az_sunset": 292.3,
+   "from_sunrise": "ENE",
+   "from_sunset": "WNW"
+  },
+  "Aug": {
+   "sunrise": "06:07",
+   "sunset": "18:41",
+   "morning": "06:07-06:36",
+   "morning_min": 29,
+   "gate": "05:47",
+   "evening": "18:12-18:41",
+   "evening_min": 29,
+   "az_sunrise": 75.3,
+   "az_sunset": 284.5,
+   "from_sunrise": "ENE",
+   "from_sunset": "WNW"
+  },
+  "Sep": {
+   "sunrise": "06:09",
+   "sunset": "18:21",
+   "morning": "06:09-06:37",
+   "morning_min": 28,
+   "gate": "05:49",
+   "evening": "17:53-18:21",
+   "evening_min": 28,
+   "az_sunrise": 86.6,
+   "az_sunset": 273.2,
+   "from_sunrise": "E",
+   "from_sunset": "W"
+  },
+  "Oct": {
+   "sunrise": "06:10",
+   "sunset": "18:01",
+   "morning": "06:10-06:38",
+   "morning_min": 28,
+   "gate": "05:50",
+   "evening": "17:32-18:01",
+   "evening_min": 28,
+   "az_sunrise": 98.5,
+   "az_sunset": 261.3,
+   "from_sunrise": "E",
+   "from_sunset": "W"
+  },
+  "Nov": {
+   "sunrise": "06:18",
+   "sunset": "17:50",
+   "morning": "06:18-06:48",
+   "morning_min": 30,
+   "gate": "05:58",
+   "evening": "17:20-17:50",
+   "evening_min": 30,
+   "az_sunrise": 108.7,
+   "az_sunset": 251.1,
+   "from_sunrise": "ESE",
+   "from_sunset": "WSW"
+  },
+  "Dec": {
+   "sunrise": "06:34",
+   "sunset": "17:56",
+   "morning": "06:34-07:04",
+   "morning_min": 31,
+   "gate": "06:14",
+   "evening": "17:25-17:56",
+   "evening_min": 31,
+   "az_sunrise": 113.7,
+   "az_sunset": 246.3,
+   "from_sunrise": "ESE",
+   "from_sunset": "WSW"
+  }
+ },
+ "nandi": {
+  "Jan": {
+   "sunrise": "06:46",
+   "golden_ends": "07:16",
+   "in_position": "06:46",
+   "usable_min": 30,
+   "full_min": 30,
+   "verdict": "full window - best months"
+  },
+  "Feb": {
+   "sunrise": "06:42",
+   "golden_ends": "07:11",
+   "in_position": "06:42",
+   "usable_min": 29,
+   "full_min": 29,
+   "verdict": "full window - best months"
+  },
+  "Mar": {
+   "sunrise": "06:27",
+   "golden_ends": "06:55",
+   "in_position": "06:27",
+   "usable_min": 28,
+   "full_min": 28,
+   "verdict": "full window - best months"
+  },
+  "Apr": {
+   "sunrise": "06:07",
+   "golden_ends": "06:36",
+   "in_position": "06:20",
+   "usable_min": 16,
+   "full_min": 28,
+   "verdict": "workable, arrive at opening"
+  },
+  "May": {
+   "sunrise": "05:54",
+   "golden_ends": "06:24",
+   "in_position": "06:20",
+   "usable_min": 4,
+   "full_min": 30,
+   "verdict": "marginal - most of the light is gone"
+  },
+  "Jun": {
+   "sunrise": "05:54",
+   "golden_ends": "06:24",
+   "in_position": "06:20",
+   "usable_min": 4,
+   "full_min": 31,
+   "verdict": "marginal - most of the light is gone"
+  },
+  "Jul": {
+   "sunrise": "06:01",
+   "golden_ends": "06:31",
+   "in_position": "06:20",
+   "usable_min": 11,
+   "full_min": 30,
+   "verdict": "marginal - most of the light is gone"
+  },
+  "Aug": {
+   "sunrise": "06:07",
+   "golden_ends": "06:36",
+   "in_position": "06:20",
+   "usable_min": 16,
+   "full_min": 29,
+   "verdict": "workable, arrive at opening"
+  },
+  "Sep": {
+   "sunrise": "06:09",
+   "golden_ends": "06:37",
+   "in_position": "06:20",
+   "usable_min": 17,
+   "full_min": 28,
+   "verdict": "workable, arrive at opening"
+  },
+  "Oct": {
+   "sunrise": "06:10",
+   "golden_ends": "06:38",
+   "in_position": "06:20",
+   "usable_min": 18,
+   "full_min": 28,
+   "verdict": "workable, arrive at opening"
+  },
+  "Nov": {
+   "sunrise": "06:18",
+   "golden_ends": "06:48",
+   "in_position": "06:20",
+   "usable_min": 28,
+   "full_min": 30,
+   "verdict": "workable, arrive at opening"
+  },
+  "Dec": {
+   "sunrise": "06:34",
+   "golden_ends": "07:04",
+   "in_position": "06:34",
+   "usable_min": 31,
+   "full_min": 31,
+   "verdict": "full window - best months"
+  }
+ }
+}

@@ -1,0 +1,442 @@
+{
+ "Dubai (Business Bay)": {
+  "Jan": {
+   "sunset": "17:51",
+   "golden": "17:17-17:51",
+   "golden_min": 33,
+   "blue": "17:51-18:15",
+   "blue_min": 25,
+   "total_min": 58,
+   "az": 247.0
+  },
+  "Feb": {
+   "sunset": "18:13",
+   "golden": "17:42-18:13",
+   "golden_min": 31,
+   "blue": "18:13-18:36",
+   "blue_min": 23,
+   "total_min": 55,
+   "az": 256.5
+  },
+  "Mar": {
+   "sunset": "18:28",
+   "golden": "17:57-18:28",
+   "golden_min": 30,
+   "blue": "18:28-18:51",
+   "blue_min": 23,
+   "total_min": 53,
+   "az": 268.2
+  },
+  "Apr": {
+   "sunset": "18:42",
+   "golden": "18:11-18:42",
+   "golden_min": 31,
+   "blue": "18:42-19:05",
+   "blue_min": 23,
+   "total_min": 54,
+   "az": 281.4
+  },
+  "May": {
+   "sunset": "18:56",
+   "golden": "18:24-18:56",
+   "golden_min": 32,
+   "blue": "18:56-19:21",
+   "blue_min": 25,
+   "total_min": 57,
+   "az": 291.5
+  },
+  "Jun": {
+   "sunset": "19:10",
+   "golden": "18:37-19:10",
+   "golden_min": 33,
+   "blue": "19:10-19:36",
+   "blue_min": 26,
+   "total_min": 59,
+   "az": 296.4
+  },
+  "Jul": {
+   "sunset": "19:12",
+   "golden": "18:39-19:12",
+   "golden_min": 33,
+   "blue": "19:12-19:37",
+   "blue_min": 25,
+   "total_min": 58,
+   "az": 294.3
+  },
+  "Aug": {
+   "sunset": "18:54",
+   "golden": "18:23-18:54",
+   "golden_min": 31,
+   "blue": "18:54-19:18",
+   "blue_min": 24,
+   "total_min": 55,
+   "az": 285.8
+  },
+  "Sep": {
+   "sunset": "18:23",
+   "golden": "17:53-18:23",
+   "golden_min": 30,
+   "blue": "18:23-18:46",
+   "blue_min": 23,
+   "total_min": 53,
+   "az": 273.6
+  },
+  "Oct": {
+   "sunset": "17:52",
+   "golden": "17:21-17:52",
+   "golden_min": 31,
+   "blue": "17:52-18:15",
+   "blue_min": 23,
+   "total_min": 54,
+   "az": 260.8
+  },
+  "Nov": {
+   "sunset": "17:31",
+   "golden": "16:59-17:31",
+   "golden_min": 33,
+   "blue": "17:31-17:55",
+   "blue_min": 24,
+   "total_min": 57,
+   "az": 249.8
+  },
+  "Dec": {
+   "sunset": "17:32",
+   "golden": "16:57-17:32",
+   "golden_min": 34,
+   "blue": "17:32-17:57",
+   "blue_min": 25,
+   "total_min": 59,
+   "az": 244.5
+  }
+ },
+ "Abu Dhabi (Corniche)": {
+  "Jan": {
+   "sunset": "17:56",
+   "golden": "17:23-17:56",
+   "golden_min": 33,
+   "blue": "17:56-18:20",
+   "blue_min": 24,
+   "total_min": 57,
+   "az": 247.2
+  },
+  "Feb": {
+   "sunset": "18:17",
+   "golden": "17:46-18:17",
+   "golden_min": 31,
+   "blue": "18:17-18:40",
+   "blue_min": 23,
+   "total_min": 54,
+   "az": 256.6
+  },
+  "Mar": {
+   "sunset": "18:31",
+   "golden": "18:01-18:31",
+   "golden_min": 30,
+   "blue": "18:31-18:54",
+   "blue_min": 23,
+   "total_min": 53,
+   "az": 268.2
+  },
+  "Apr": {
+   "sunset": "18:44",
+   "golden": "18:14-18:44",
+   "golden_min": 30,
+   "blue": "18:44-19:08",
+   "blue_min": 23,
+   "total_min": 54,
+   "az": 281.3
+  },
+  "May": {
+   "sunset": "18:59",
+   "golden": "18:27-18:59",
+   "golden_min": 32,
+   "blue": "18:59-19:23",
+   "blue_min": 25,
+   "total_min": 57,
+   "az": 291.3
+  },
+  "Jun": {
+   "sunset": "19:12",
+   "golden": "18:39-19:12",
+   "golden_min": 33,
+   "blue": "19:12-19:38",
+   "blue_min": 26,
+   "total_min": 59,
+   "az": 296.2
+  },
+  "Jul": {
+   "sunset": "19:14",
+   "golden": "18:41-19:14",
+   "golden_min": 32,
+   "blue": "19:14-19:39",
+   "blue_min": 25,
+   "total_min": 58,
+   "az": 294.1
+  },
+  "Aug": {
+   "sunset": "18:57",
+   "golden": "18:26-18:57",
+   "golden_min": 31,
+   "blue": "18:57-19:20",
+   "blue_min": 24,
+   "total_min": 55,
+   "az": 285.7
+  },
+  "Sep": {
+   "sunset": "18:27",
+   "golden": "17:57-18:27",
+   "golden_min": 30,
+   "blue": "18:27-18:49",
+   "blue_min": 23,
+   "total_min": 53,
+   "az": 273.5
+  },
+  "Oct": {
+   "sunset": "17:56",
+   "golden": "17:26-17:56",
+   "golden_min": 31,
+   "blue": "17:56-18:19",
+   "blue_min": 23,
+   "total_min": 53,
+   "az": 260.9
+  },
+  "Nov": {
+   "sunset": "17:36",
+   "golden": "17:03-17:36",
+   "golden_min": 32,
+   "blue": "17:36-18:00",
+   "blue_min": 24,
+   "total_min": 56,
+   "az": 249.9
+  },
+  "Dec": {
+   "sunset": "17:37",
+   "golden": "17:03-17:37",
+   "golden_min": 34,
+   "blue": "17:37-18:01",
+   "blue_min": 25,
+   "total_min": 59,
+   "az": 244.7
+  }
+ },
+ "Delhi (reference)": {
+  "Jan": {
+   "sunset": "17:46",
+   "golden": "17:12-17:46",
+   "golden_min": 35,
+   "blue": "17:46-18:12",
+   "blue_min": 25,
+   "total_min": 60,
+   "az": 246.3
+  },
+  "Feb": {
+   "sunset": "18:11",
+   "golden": "17:39-18:11",
+   "golden_min": 32,
+   "blue": "18:11-18:35",
+   "blue_min": 24,
+   "total_min": 56,
+   "az": 256.1
+  },
+  "Mar": {
+   "sunset": "18:29",
+   "golden": "17:58-18:29",
+   "golden_min": 31,
+   "blue": "18:29-18:53",
+   "blue_min": 24,
+   "total_min": 55,
+   "az": 268.2
+  },
+  "Apr": {
+   "sunset": "18:47",
+   "golden": "18:15-18:47",
+   "golden_min": 32,
+   "blue": "18:47-19:11",
+   "blue_min": 24,
+   "total_min": 56,
+   "az": 281.8
+  },
+  "May": {
+   "sunset": "19:05",
+   "golden": "18:32-19:05",
+   "golden_min": 33,
+   "blue": "19:05-19:31",
+   "blue_min": 26,
+   "total_min": 59,
+   "az": 292.2
+  },
+  "Jun": {
+   "sunset": "19:20",
+   "golden": "18:46-19:20",
+   "golden_min": 34,
+   "blue": "19:20-19:47",
+   "blue_min": 27,
+   "total_min": 61,
+   "az": 297.3
+  },
+  "Jul": {
+   "sunset": "19:21",
+   "golden": "18:47-19:21",
+   "golden_min": 34,
+   "blue": "19:21-19:47",
+   "blue_min": 26,
+   "total_min": 60,
+   "az": 295.1
+  },
+  "Aug": {
+   "sunset": "19:01",
+   "golden": "18:29-19:01",
+   "golden_min": 32,
+   "blue": "19:01-19:25",
+   "blue_min": 25,
+   "total_min": 57,
+   "az": 286.4
+  },
+  "Sep": {
+   "sunset": "18:27",
+   "golden": "17:55-18:27",
+   "golden_min": 31,
+   "blue": "18:27-18:50",
+   "blue_min": 24,
+   "total_min": 55,
+   "az": 273.8
+  },
+  "Oct": {
+   "sunset": "17:52",
+   "golden": "17:20-17:52",
+   "golden_min": 32,
+   "blue": "17:52-18:16",
+   "blue_min": 24,
+   "total_min": 55,
+   "az": 260.6
+  },
+  "Nov": {
+   "sunset": "17:28",
+   "golden": "16:54-17:28",
+   "golden_min": 34,
+   "blue": "17:28-17:53",
+   "blue_min": 25,
+   "total_min": 59,
+   "az": 249.2
+  },
+  "Dec": {
+   "sunset": "17:26",
+   "golden": "16:51-17:26",
+   "golden_min": 35,
+   "blue": "17:26-17:52",
+   "blue_min": 26,
+   "total_min": 61,
+   "az": 243.7
+  }
+ },
+ "London (reference)": {
+  "Jan": {
+   "sunset": "17:21",
+   "golden": "16:24-17:21",
+   "golden_min": 57,
+   "blue": "17:21-17:59",
+   "blue_min": 38,
+   "total_min": 96,
+   "az": 236.1
+  },
+  "Feb": {
+   "sunset": "18:16",
+   "golden": "17:27-18:16",
+   "golden_min": 48,
+   "blue": "18:16-18:50",
+   "blue_min": 35,
+   "total_min": 83,
+   "az": 250.8
+  },
+  "Mar": {
+   "sunset": "19:05",
+   "golden": "18:21-19:05",
+   "golden_min": 44,
+   "blue": "19:05-19:38",
+   "blue_min": 33,
+   "total_min": 78,
+   "az": 268.0
+  },
+  "Apr": {
+   "sunset": "19:57",
+   "golden": "19:12-19:57",
+   "golden_min": 45,
+   "blue": "19:57-20:33",
+   "blue_min": 36,
+   "total_min": 81,
+   "az": 287.3
+  },
+  "May": {
+   "sunset": "20:46",
+   "golden": "19:56-20:46",
+   "golden_min": 50,
+   "blue": "20:46-21:28",
+   "blue_min": 42,
+   "total_min": 91,
+   "az": 302.8
+  },
+  "Jun": {
+   "sunset": "21:20",
+   "golden": "20:25-21:20",
+   "golden_min": 54,
+   "blue": "21:20-22:07",
+   "blue_min": 48,
+   "total_min": 102,
+   "az": 310.9
+  },
+  "Jul": {
+   "sunset": "21:11",
+   "golden": "20:20-21:11",
+   "golden_min": 52,
+   "blue": "21:11-21:56",
+   "blue_min": 44,
+   "total_min": 96,
+   "az": 307.2
+  },
+  "Aug": {
+   "sunset": "20:23",
+   "golden": "19:37-20:23",
+   "golden_min": 46,
+   "blue": "20:23-21:00",
+   "blue_min": 37,
+   "total_min": 84,
+   "az": 293.8
+  },
+  "Sep": {
+   "sunset": "19:15",
+   "golden": "18:31-19:15",
+   "golden_min": 44,
+   "blue": "19:15-19:49",
+   "blue_min": 34,
+   "total_min": 77,
+   "az": 275.6
+  },
+  "Oct": {
+   "sunset": "18:07",
+   "golden": "17:21-18:07",
+   "golden_min": 46,
+   "blue": "18:07-18:41",
+   "blue_min": 34,
+   "total_min": 80,
+   "az": 257.0
+  },
+  "Nov": {
+   "sunset": "17:11",
+   "golden": "16:18-17:11",
+   "golden_min": 54,
+   "blue": "17:11-17:48",
+   "blue_min": 37,
+   "total_min": 91,
+   "az": 240.4
+  },
+  "Dec": {
+   "sunset": "16:52",
+   "golden": "15:50-16:52",
+   "golden_min": 61,
+   "blue": "16:52-17:32",
+   "blue_min": 40,
+   "total_min": 102,
+   "az": 231.9
+  }
+ }
+}

@@ -22,7 +22,7 @@
     <!-- Primary SEO Meta Tags -->
     <title>Wedding Photographer in Middle East | WeddingClickz</title>
     <meta name="description" content="Luxury wedding photographer and cinematic film studio in Dubai, Abu Dhabi and India. Candid photography, 4K wedding films and pre-wedding shoots.">
-    <meta name="keywords" content="wedding photography, wedding photographer, wedding films, wedding cinematography, candid wedding photography, destination wedding photographer, pre-wedding shoot, luxury wedding photography, premium wedding photographer, wedding photographer Bangalore, wedding photographer India, wedding photographer Dubai, wedding photographer Abu Dhabi, wedding photographer UAE, wedding photographer Mumbai, wedding photographer Delhi, wedding photographer Hyderabad, wedding photographer Goa, wedding photographer Udaipur, wedding photographer Jaipur, wedding photographer Kerala, wedding photography Dubai, wedding photography Abu Dhabi, wedding film Dubai, wedding film Abu Dhabi, wedding video Dubai, wedding video Abu Dhabi, wedding UAE, Photographer Dubai, Photographer Abu Dhabi, Videographer Dubai, Videographer Abu Dhabi, Pre wedding shoot Dubai, Pre wedding shoot Abu Dhabi, Pre wedding shoot UAE, Pre wedding shoot Bahrain, Wedding photography Bahrain, Indian wedding photography, Hindu wedding photographer, Muslim wedding photographer, Christian wedding photographer, South Indian wedding photographer, North Indian wedding photographer, best wedding photographer India, top wedding photographer Bangalore, cinematic wedding film, 4K wedding film, drone wedding photography, bridal portrait, couple portrait, engagement photography, reception photography, mehendi photography, sangeet photography, haldi ceremony photography, wedding album, Italian leather wedding album, wedding photo book, wedding videography, wedding video, wedding highlight reel, wedding teaser, celebrity wedding photographer, international wedding photographer, wedding photography packages, affordable wedding photography, professional wedding photographer, creative wedding photographer, artistic wedding photographer, wedding photography portfolio, real wedding gallery, wedding photography near me, best wedding cinematographer India, wedding photographer cost, wedding photography tips, wedding planning">
+    <meta name="keywords" content="wedding photographer Dubai, wedding videographer Dubai, wedding photographer Abu Dhabi, wedding films UAE, pre-wedding shoot Dubai, wedding photography Bahrain, candid wedding photography, destination wedding photographer, wedding photographer Bengaluru, Indian wedding photographer UAE">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://weddingclickz.com/">
@@ -201,13 +201,59 @@
           }
         ]
       },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "bestRating": "5",
-        "ratingCount": "350",
-        "reviewCount": "280"
-      }
+      "foundingDate": "2014",
+      "slogan": "Weddings, remembered the way they felt.",
+      "knowsLanguage": ["en", "hi", "kn", "ta", "ml", "ar"],
+      "subOrganization": {"@id": "https://weddingclickz.com/#studio-dubai"}
+    }
+    </script>
+
+    <!-- Structured Data: the Dubai (Business Bay) studio as its own local entity.
+         Kept separate from the Bengaluru entity above so Google can index two
+         distinct places rather than one business with a second address buried
+         in FAQ prose. Linked back via parentOrganization. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "@id": "https://weddingclickz.com/#studio-dubai",
+      "name": "WeddingClickz — Dubai Studio",
+      "description": "Wedding photography and cinematic wedding films across Dubai, Abu Dhabi, Sharjah, the wider UAE and Bahrain, run from the Business Bay studio.",
+      "url": "https://weddingclickz.com/wedding-photographer-uae.html",
+      "parentOrganization": {"@id": "https://weddingclickz.com/#business"},
+      "telephone": "+971543043283",
+      "email": "info@weddingclickz.ae",
+      "image": ["https://weddingclickz.com/og-image.jpg"],
+      "priceRange": "AED 6,000 – AED 200,000+",
+      "currenciesAccepted": "AED",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "5th Floor, Bay Square, Opposite DoubleTree by Hilton, Business Bay",
+        "addressLocality": "Dubai",
+        "addressRegion": "Dubai",
+        "addressCountry": "AE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 25.1855,
+        "longitude": 55.2625
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "09:00",
+        "closes": "21:00"
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Dubai"},
+        {"@type": "City", "name": "Abu Dhabi"},
+        {"@type": "City", "name": "Sharjah"},
+        {"@type": "City", "name": "Ras Al Khaimah"},
+        {"@type": "City", "name": "Manama"},
+        {"@type": "Country", "name": "United Arab Emirates"},
+        {"@type": "Country", "name": "Bahrain"}
+      ],
+      "availableLanguage": ["en", "hi", "ar", "ml"]
     }
     </script>
     
@@ -244,7 +290,7 @@
           "name": "Who is WeddingClickz and what do you do?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "WeddingClickz is a premier wedding photographer and cinematic film studio serving Dubai, Abu Dhabi, UAE, Bahrain and India. We cover Dubai, Abu Dhabi, Sharjah, Manama, Bangalore, Mumbai, Delhi, Hyderabad, Goa, Udaipur, Jaipur and Kerala. We have captured 1800+ weddings since 2014 and specialise in candid wedding photography, wedding films, wedding videos, pre-wedding shoots and Italian leather albums."
+            "text": "We are a wedding photography and cinematic film studio with two homes — Business Bay in Dubai, and Konanakunte in Bengaluru. Since 2014 we have photographed more than 1,800 weddings. Most of our year is spent between Dubai, Abu Dhabi, Sharjah, Manama, Bengaluru, Mumbai, Delhi, Hyderabad, Goa, Udaipur, Jaipur and Kerala. The work itself is candid photography, 4K films, pre-wedding shoots and hand-bound Italian leather albums."
           }
         },
         {
@@ -321,10 +367,10 @@
         },
         {
           "@type": "Question",
-          "name": "Where is WeddingClickz studio located?",
+          "name": "Where is the WeddingClickz studio?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We have two studios. India: ClayWorks Shankaraa, Kanakapura Main Rd, Munireddy Layout, Konanakunte, Bengaluru, Karnataka 560062. UAE: 5th Floor, Bay Square, Opp Doubletree Hilton, Business Bay, Dubai, United Arab Emirates. We serve clients across Dubai, Abu Dhabi, UAE, Bahrain and India — including Dubai, Abu Dhabi, Sharjah, Manama, Bangalore, Mumbai, Delhi, Hyderabad and Goa."
+            "text": "Two studios. In the UAE: 5th Floor, Bay Square, opposite DoubleTree by Hilton, Business Bay, Dubai. In India: ClayWorks Shankaraa, Kanakapura Main Road, Munireddy Layout, Konanakunte, Bengaluru, Karnataka 560062. Between them we cover the UAE, Bahrain and India — most regularly Dubai, Abu Dhabi, Sharjah, Manama, Bengaluru, Mumbai, Delhi, Hyderabad and Goa. Visits are by appointment, so message us before you come."
           }
         }
       ]
@@ -6479,7 +6525,7 @@
                 <details class="faq-item" open>
                     <summary>Who is WeddingClickz and what do you do? <span class="faq-icon">+</span></summary>
                     <div class="faq-answer">
-                        <p><strong>WeddingClickz is a premier wedding photographer and cinematic film studio serving Dubai, Abu Dhabi, UAE, Bahrain and India,</strong> with active coverage across Dubai, Abu Dhabi, Sharjah, Manama, Bangalore, Mumbai, Delhi, Hyderabad, Goa, Udaipur, Jaipur and Kerala. We have captured 1800+ weddings since 2014 and specialise in candid wedding photography, wedding films, wedding videos, pre-wedding shoots in Dubai, Abu Dhabi, UAE and Bahrain, 4K cinematic films and Italian leather albums.</p>
+                        <p><strong>We are a wedding photography and cinematic film studio with two homes — Business Bay in Dubai, and Konanakunte in Bengaluru.</strong> Since 2014 we have photographed more than 1,800 weddings. Most of our year is spent between Dubai, Abu Dhabi, Sharjah, Manama, Bengaluru, Mumbai, Delhi, Hyderabad, Goa, Udaipur, Jaipur and Kerala. The work itself is candid photography, 4K films, pre-wedding shoots and hand-bound Italian leather albums.</p>
                     </div>
                 </details>
 
@@ -6545,6 +6591,13 @@
                         <p>Three simple steps: <strong>(1) Share your wedding date and event details via WhatsApp +91 97402 22927 or the form above. (2) We send a custom quote within 24 hours. (3) Lock the date with a 25% retainer.</strong> The remaining payment is split between the wedding day and final delivery.</p>
                     </div>
                 </details>
+
+                <details class="faq-item">
+                    <summary>Where is the WeddingClickz studio? <span class="faq-icon">+</span></summary>
+                    <div class="faq-answer">
+                        <p><strong>Two studios.</strong> In the UAE: <a href="https://maps.google.com/?q=Bay+Square,+Business+Bay,+Dubai,+United+Arab+Emirates" rel="noopener">5th Floor, Bay Square, opposite DoubleTree by Hilton, Business Bay, Dubai</a>. In India: <a href="https://maps.google.com/?q=ClayWorks+Shankaraa,+Kanakapura+Main+Rd,+Munireddy+Layout,+Konanakunte,+Bengaluru,+Karnataka+560062" rel="noopener">ClayWorks Shankaraa, Kanakapura Main Road, Munireddy Layout, Konanakunte, Bengaluru, Karnataka 560062</a>. Between them we cover the UAE, Bahrain and India — most regularly Dubai, Abu Dhabi, Sharjah, Manama, Bengaluru, Mumbai, Delhi, Hyderabad and Goa. Visits are by appointment, so message us before you come.</p>
+                    </div>
+                </details>
             </div>
         </div>
     </section>
@@ -6608,6 +6661,7 @@
                         <li><a href="wedding-photography.html">Wedding Photography</a></li>
                         <li><a href="#films">Wedding Films</a></li>
                         <li><a href="pre-wedding-shoots.html">Pre-Wedding Shoots</a></li>
+                        <li><a href="pre-wedding-shoot-bangalore.html">Pre-Wedding Shoot Bangalore</a></li>
                         <li><a href="wedding-photography.html">Destination Weddings</a></li>
                         <li><a href="#services">Photo Albums</a></li>
                     </ul>

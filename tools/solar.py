@@ -41,7 +41,8 @@ def find(date, target_elev, rising):
         else: hi = mid
     return (lo+hi)/2
 
-def hm(m): return f"{int(m)//60:02d}:{int(round(m))%60:02d}"
+def hm(m):
+    t = int(round(m)); return f"{t//60:02d}:{t%60:02d}"
 
 print(f"{'MONTH':4} {'SUNRISE':>7} {'SUNSET':>7} {'GOLDEN HOUR (6°→0°)':>21} {'BLUE HR END':>11} {'SUNSET AZ':>9} {'NOON ELEV':>9} {'SHADOW@6°':>9}")
 rows=[]

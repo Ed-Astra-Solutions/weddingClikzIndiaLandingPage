@@ -94,6 +94,17 @@
     </image:image>
   </url>
 
+  <url>
+    <loc>https://weddingclickz.com/pre-wedding-shoot-bangalore.html</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://weddingclickz.com/assets/bangalore/bangalore-pre-wedding-dhrithi-nitish-cover.jpg</image:loc>
+      <image:title>Pre-Wedding Shoot in Bangalore — WeddingClickz</image:title>
+    </image:image>
+  </url>
+
   <!-- Blog index -->
   <url>
     <loc>https://weddingclickz.com/blog.html</loc>
