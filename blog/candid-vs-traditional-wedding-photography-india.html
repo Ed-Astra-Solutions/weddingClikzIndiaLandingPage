@@ -114,7 +114,7 @@
 
 <h2>Key Differences at a Glance</h2>
 <div class="table-wrap">
-<table>
+<div class="data-table-wrap"><table>
   <thead><tr><th></th><th>Candid</th><th>Traditional</th></tr></thead>
   <tbody>
     <tr><td><strong>Style</strong></td><td>Unposed, documentary</td><td>Posed, formal</td></tr>
@@ -124,7 +124,7 @@
     <tr><td><strong>Who loves it</strong></td><td>Couple and peers</td><td>Parents and grandparents</td></tr>
     <tr><td><strong>Cost (India avg/day)</strong></td><td>₹30,000 – ₹80,000</td><td>₹15,000 – ₹40,000</td></tr>
   </tbody>
-</table>
+</table></div>
 </div>
 
 <h2>Why Most Indian Couples Now Book Both</h2>
@@ -176,6 +176,49 @@
   </div>
 </section>
 
+
+<section class="post-enquiry" id="enquire" aria-label="Enquire about your shoot">
+  <div class="pe-inner">
+    <span class="pe-eyebrow">Talk to us</span>
+    <h2>Tell Us About Your <em>Shoot</em></h2>
+    <p class="pe-sub">Send your date and what you have in mind. We reply within 24 hours
+       with availability and an itemised quote &mdash; no call required first.</p>
+    <form id="postEnquiryForm" novalidate>
+      <div class="pe-grid">
+        <div class="pe-field">
+          <label for="pe-name">Name <span>*</span></label>
+          <input id="pe-name" type="text" name="name" required placeholder="Your full name">
+        </div>
+        <div class="pe-field">
+          <label for="pe-phone">Phone <span>*</span></label>
+          <input id="pe-phone" type="tel" name="phone" required placeholder="+91 98765 43210">
+        </div>
+        <div class="pe-field">
+          <label for="pe-email">Email <span>*</span></label>
+          <input id="pe-email" type="email" name="email" required placeholder="your@email.com">
+        </div>
+        <div class="pe-field">
+          <label for="pe-date">Shoot or wedding date</label>
+          <input id="pe-date" type="date" name="date">
+        </div>
+        <div class="pe-field pe-full">
+          <label for="pe-location">Location or venue</label>
+          <input id="pe-location" type="text" name="location" placeholder="City, venue or the area you have in mind">
+        </div>
+        <div class="pe-field pe-full">
+          <label for="pe-message">Anything else</label>
+          <textarea id="pe-message" name="message" placeholder="Events, guest count, the kind of pictures you like&hellip;"></textarea>
+        </div>
+        <p class="pe-msg" role="status" aria-live="polite"></p>
+        <div class="pe-actions">
+          <span class="pe-note">Or WhatsApp <a href="https://wa.me/919740222927" style="color:inherit;">+91 97402 22927</a></span>
+          <button type="submit" class="pe-submit">Send Enquiry</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
 <footer class="post-footer">
   <div class="footer-inner">
     <div class="footer-office" style="text-align:center;margin:0 auto 1.2rem;max-width:640px;font-size:.85rem;opacity:.85;line-height:1.7;">
@@ -207,5 +250,7 @@
       <iframe title="WeddingClickz Middle East on Google Maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14442.143599605643!2d55.279805!3d25.185144!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69693a660453%3A0x69875b9310f0c8b9!2sWeddingClickz%20Middle%20East!5e0!3m2!1sen!2sus!4v1784143348074!5m2!1sen!2sus" width="100%" height="240" style="border:0;border-radius:12px;display:block;" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 </footer>
+<script src="https://www.google.com/recaptcha/api.js?render=6LevLlIsAAAAACA4B0mAG0wvTCNnubTNA-OgUgai" defer></script>
+<script src="/blog/contact-form.js" defer></script>
 </body>
 </html>

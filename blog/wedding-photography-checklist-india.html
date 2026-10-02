@@ -203,13 +203,13 @@
 </ul>
 
 <h2>How Many Photos Should You Expect?</h2>
-<table>
+<div class="data-table-wrap"><table>
 <tr><th>Event Type</th><th>Typical Delivered Photos (edited)</th></tr>
 <tr><td>Single ceremony (4–6 hours)</td><td>300–500 images</td></tr>
 <tr><td>Full wedding day (10–14 hours)</td><td>600–900 images</td></tr>
 <tr><td>2-day wedding (mehendi + wedding)</td><td>900–1,400 images</td></tr>
 <tr><td>3-day wedding (sangeet + mehendi + wedding + reception)</td><td>1,400–2,200 images</td></tr>
-</table>
+</table></div>
 
 <p>These numbers assume professional curation and editing — every delivered image should be colour-graded, exposure-corrected, and worth looking at. If a photographer promises 3,000+ images for a single day, that is a quantity-over-quality warning sign.</p>
 
@@ -263,6 +263,49 @@
   </div>
 </section>
 
+
+<section class="post-enquiry" id="enquire" aria-label="Enquire about your shoot">
+  <div class="pe-inner">
+    <span class="pe-eyebrow">Talk to us</span>
+    <h2>Tell Us About Your <em>Shoot</em></h2>
+    <p class="pe-sub">Send your date and what you have in mind. We reply within 24 hours
+       with availability and an itemised quote &mdash; no call required first.</p>
+    <form id="postEnquiryForm" novalidate>
+      <div class="pe-grid">
+        <div class="pe-field">
+          <label for="pe-name">Name <span>*</span></label>
+          <input id="pe-name" type="text" name="name" required placeholder="Your full name">
+        </div>
+        <div class="pe-field">
+          <label for="pe-phone">Phone <span>*</span></label>
+          <input id="pe-phone" type="tel" name="phone" required placeholder="+91 98765 43210">
+        </div>
+        <div class="pe-field">
+          <label for="pe-email">Email <span>*</span></label>
+          <input id="pe-email" type="email" name="email" required placeholder="your@email.com">
+        </div>
+        <div class="pe-field">
+          <label for="pe-date">Shoot or wedding date</label>
+          <input id="pe-date" type="date" name="date">
+        </div>
+        <div class="pe-field pe-full">
+          <label for="pe-location">Location or venue</label>
+          <input id="pe-location" type="text" name="location" placeholder="City, venue or the area you have in mind">
+        </div>
+        <div class="pe-field pe-full">
+          <label for="pe-message">Anything else</label>
+          <textarea id="pe-message" name="message" placeholder="Events, guest count, the kind of pictures you like&hellip;"></textarea>
+        </div>
+        <p class="pe-msg" role="status" aria-live="polite"></p>
+        <div class="pe-actions">
+          <span class="pe-note">Or WhatsApp <a href="https://wa.me/919740222927" style="color:inherit;">+91 97402 22927</a></span>
+          <button type="submit" class="pe-submit">Send Enquiry</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
 <footer class="site-footer">
   <div class="footer-container">
     <div class="footer-office" style="text-align:center;margin:0 auto 1.2rem;max-width:640px;font-size:.85rem;opacity:.85;line-height:1.7;">
@@ -296,5 +339,7 @@
     </div>
 </footer>
 
+<script src="https://www.google.com/recaptcha/api.js?render=6LevLlIsAAAAACA4B0mAG0wvTCNnubTNA-OgUgai" defer></script>
+<script src="/blog/contact-form.js" defer></script>
 </body>
 </html>

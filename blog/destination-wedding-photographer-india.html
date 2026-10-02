@@ -121,7 +121,7 @@
 
 <h2>What a Destination Wedding Costs in 2026</h2>
 
-<table>
+<div class="data-table-wrap"><table>
 <tr><th>Destination</th><th>Typical wedding budget</th><th>Photography add-on</th></tr>
 <tr><td>Udaipur (palace)</td><td>₹1.5–6 Cr+</td><td>₹2L–₹4L for travel/stay</td></tr>
 <tr><td>Jaipur (palace)</td><td>₹1–4 Cr</td><td>₹1.5L–₹3.5L</td></tr>
@@ -129,7 +129,7 @@
 <tr><td>Goa (5-star coastal)</td><td>₹40L–₹2Cr</td><td>₹1L–₹2.5L</td></tr>
 <tr><td>Coorg / Chikmagalur</td><td>₹25L–₹80L</td><td>₹50K–₹1.5L</td></tr>
 <tr><td>Kerala backwaters</td><td>₹30L–₹1.2Cr</td><td>₹1L–₹2.5L</td></tr>
-</table>
+</table></div>
 
 <p>Add cinematography to these numbers if your photographer's package doesn't include it; for full cost benchmarking see our <a href="/blog/wedding-photography-cost-bangalore.html">Bangalore wedding photography cost guide</a>.</p>
 
@@ -211,6 +211,49 @@
   </div>
 </section>
 
+
+<section class="post-enquiry" id="enquire" aria-label="Enquire about your shoot">
+  <div class="pe-inner">
+    <span class="pe-eyebrow">Talk to us</span>
+    <h2>Tell Us About Your <em>Shoot</em></h2>
+    <p class="pe-sub">Send your date and what you have in mind. We reply within 24 hours
+       with availability and an itemised quote &mdash; no call required first.</p>
+    <form id="postEnquiryForm" novalidate>
+      <div class="pe-grid">
+        <div class="pe-field">
+          <label for="pe-name">Name <span>*</span></label>
+          <input id="pe-name" type="text" name="name" required placeholder="Your full name">
+        </div>
+        <div class="pe-field">
+          <label for="pe-phone">Phone <span>*</span></label>
+          <input id="pe-phone" type="tel" name="phone" required placeholder="+91 98765 43210">
+        </div>
+        <div class="pe-field">
+          <label for="pe-email">Email <span>*</span></label>
+          <input id="pe-email" type="email" name="email" required placeholder="your@email.com">
+        </div>
+        <div class="pe-field">
+          <label for="pe-date">Shoot or wedding date</label>
+          <input id="pe-date" type="date" name="date">
+        </div>
+        <div class="pe-field pe-full">
+          <label for="pe-location">Location or venue</label>
+          <input id="pe-location" type="text" name="location" placeholder="City, venue or the area you have in mind">
+        </div>
+        <div class="pe-field pe-full">
+          <label for="pe-message">Anything else</label>
+          <textarea id="pe-message" name="message" placeholder="Events, guest count, the kind of pictures you like&hellip;"></textarea>
+        </div>
+        <p class="pe-msg" role="status" aria-live="polite"></p>
+        <div class="pe-actions">
+          <span class="pe-note">Or WhatsApp <a href="https://wa.me/919740222927" style="color:inherit;">+91 97402 22927</a></span>
+          <button type="submit" class="pe-submit">Send Enquiry</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
 <footer class="site-footer">
   <div class="footer-container">
     <div class="footer-office" style="text-align:center;margin:0 auto 1.2rem;max-width:640px;font-size:.85rem;opacity:.85;line-height:1.7;">
@@ -244,5 +287,7 @@
     </div>
 </footer>
 
+<script src="https://www.google.com/recaptcha/api.js?render=6LevLlIsAAAAACA4B0mAG0wvTCNnubTNA-OgUgai" defer></script>
+<script src="/blog/contact-form.js" defer></script>
 </body>
 </html>
