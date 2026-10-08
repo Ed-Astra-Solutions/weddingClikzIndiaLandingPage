@@ -6038,8 +6038,9 @@
             <div class="section-header" data-aos="fade-up">
                 <span class="section-label">Portfolio Gallery</span>
                 <h2 class="section-title">Wedding Photography <em>Gallery</em></h2>
-                <p class="section-subtitle">A curated gallery of real weddings we have photographed across India and the UAE &mdash; click any cover to open the full set.</p>
-                <p class="section-subtitle" style="margin-top:0.75rem;font-size:0.9rem;">
+                <p data-geo="IN" class="section-subtitle">A curated gallery of real weddings we have photographed across India and the UAE &mdash; click any cover to open the full set.</p>
+                <p data-geo="UAE" class="section-subtitle" style="display:none;">A curated gallery of real weddings we have photographed across the UAE &mdash; click any cover to open the full set.</p>
+                <p data-geo="IN" class="section-subtitle" style="margin-top:0.75rem;font-size:0.9rem;">
                     See the region galleries:
                     <a href="/in/" style="color:var(--gold-dark);">India</a> &nbsp;&middot;&nbsp;
                     <a href="/ae/" style="color:var(--gold-dark);">UAE</a>
@@ -6328,8 +6329,10 @@
                     <span class="section-label" id="aboutSectionLabel">Our Story</span>
                     <h2 id="aboutHeadline">Passionate About <em>Capturing Love</em></h2>
                     <div id="aboutParagraphs">
-                        <p>Founded with a vision to elevate wedding photography and cinematography to an art form, WeddingClickz has become synonymous with luxury and excellence as a wedding photographer in Dubai, Abu Dhabi, UAE, Bahrain and India.</p>
-                        <p>Our team of talented photographers and videographers in Dubai, Abu Dhabi and across India brings together diverse creative backgrounds, united by a shared passion for storytelling. We believe every love story deserves to be told with beauty, authenticity, and emotion — whether your wedding is in Dubai, Abu Dhabi, Manama, Bangalore or any destination worldwide.</p>
+                        <p data-geo="IN">Founded with a vision to elevate wedding photography and cinematography to an art form, WeddingClickz has become synonymous with luxury and excellence as a wedding photographer in Dubai, Abu Dhabi, UAE, Bahrain and India.</p>
+                        <p data-geo="UAE" style="display:none;">Founded with a vision to elevate wedding photography and cinematography to an art form, WeddingClickz has become synonymous with luxury and excellence as a wedding photographer in Dubai, Abu Dhabi, across the UAE and Bahrain.</p>
+                        <p data-geo="IN">Our team of talented photographers and videographers in Dubai, Abu Dhabi and across India brings together diverse creative backgrounds, united by a shared passion for storytelling. We believe every love story deserves to be told with beauty, authenticity, and emotion — whether your wedding is in Dubai, Abu Dhabi, Manama, Bangalore or any destination worldwide.</p>
+                        <p data-geo="UAE" style="display:none;">Our team of talented photographers and videographers in Dubai and Abu Dhabi brings together diverse creative backgrounds, united by a shared passion for storytelling. We believe every love story deserves to be told with beauty, authenticity, and emotion — whether your wedding is in Dubai, Abu Dhabi, Manama or any destination worldwide.</p>
                         <p>From intimate ceremonies to grand celebrations, we approach each wedding with fresh eyes and a commitment to capturing the unique essence of every couple — wedding photography, wedding films, wedding videos and pre-wedding shoots across the UAE, Bahrain and India.</p>
                     </div>
 
@@ -6392,7 +6395,7 @@
                             </div>
                             <div class="contact-item-content">
                                 <h4>Email Us</h4>
-                                <span style="display:block;font-size:0.75rem;letter-spacing:1px;opacity:0.6;margin-top:6px;">INDIA</span>
+                                <span data-geo="IN" style="display:block;font-size:0.75rem;letter-spacing:1px;opacity:0.6;margin-top:6px;">INDIA</span>
                                 <a data-geo="IN" href="mailto:info@weddingclickz.com">info@weddingclickz.com</a>
                                 <span style="display:block;font-size:0.75rem;letter-spacing:1px;opacity:0.6;margin-top:6px;">UAE</span>
                                 <a href="mailto:info@weddingclickz.ae">info@weddingclickz.ae</a>
@@ -6408,7 +6411,7 @@
                             </div>
                             <div class="contact-item-content">
                                 <h4>Studio Location</h4>
-                                <span style="display:block;font-size:0.75rem;letter-spacing:1px;opacity:0.6;margin-top:6px;">INDIA</span>
+                                <span data-geo="IN" style="display:block;font-size:0.75rem;letter-spacing:1px;opacity:0.6;margin-top:6px;">INDIA</span>
                                 <a data-geo="IN" href="https://maps.google.com/?q=ClayWorks+Shankaraa,+Kanakapura+Main+Rd,+Munireddy+Layout,+Konanakunte,+Bengaluru,+Karnataka+560062" target="_blank" rel="noopener noreferrer" style="display: block;">ClayWorks Shankaraa,<br>Kanakapura Main Rd, Munireddy Layout,<br>Konanakunte, Bengaluru, Karnataka 560062</a>
                                 <span style="display:block;font-size:0.75rem;letter-spacing:1px;opacity:0.6;margin-top:10px;">UAE</span>
                                 <a href="https://maps.google.com/?q=Bay+Square,+Business+Bay,+Dubai,+United+Arab+Emirates" target="_blank" rel="noopener noreferrer" style="display: block;">5th Floor, Bay Square,<br>Opp Doubletree Hilton, Business Bay,<br>Dubai, United Arab Emirates</a>
@@ -8141,6 +8144,17 @@
             document.querySelectorAll('[data-geo="IN"]').forEach(el => {
                 el.style.display = isUAE ? 'none' : '';
             });
+            // UAE-only copy replaces India-mentioning text; hidden by default
+            // so crawlers (no localStorage) index the combined version.
+            document.querySelectorAll('[data-geo="UAE"]').forEach(el => {
+                el.style.display = isUAE ? '' : 'none';
+            });
+            const whySub = document.getElementById('whySectionSubtitle');
+            if (whySub && isUAE && /India/.test(whySub.textContent)) {
+                whySub.textContent = 'Trusted wedding photographers and videographers in Dubai, Abu Dhabi, across the UAE and Bahrain for destination weddings, grand celebrations and intimate ceremonies.';
+            }
+            const phoneInput = document.querySelector('#contactForm input[name="phone"]');
+            if (phoneInput) phoneInput.placeholder = isUAE ? '+971 50 123 4567' : '+91 98765 43210';
             applyRegionContactPoint(isUAE);
         }
 
